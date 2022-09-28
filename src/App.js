@@ -1,7 +1,5 @@
+import './swiper.css';
 import './App.css';
-import 'swiper/css';
-import 'swiper/css/navigation';
-import 'swiper/css/pagination';
 import React, { Fragment } from 'react';
 import {swiperEffect, scrollEffect, contentEffect, changeDescription} from './effect';
 
