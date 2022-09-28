@@ -1,100 +1,105 @@
 import $ from 'jquery';
+import Swiper, { Navigation, Pagination } from 'swiper';
 
-$(function(){
+function swiperEffect () {
     var swiper_main = new Swiper('.swiper-container.banner', {
-      fadeEffect: {
-          crossFade: true
-        },
-        navigation: {
-          nextEl: '.swiper-button-next',
-          prevEl: '.swiper-button-prev',
-        },
-        pagination: {
-          el: '.swiper-pagination',
-          type: 'fraction',
-        },
-        autoHeight: false,
-    });
-  
-    // swiper_main.slideTo(1, false,false);
-    swiper_main.on('slideChange', function (i) {
-      var cupage = swiper_main.activeIndex +1;
-      console.log(cupage)
-      $('nav ul li').removeClass('active');
-      $('nav ul li[data-mno="'+cupage+'"]').addClass('active');
-  
-    });
-  
-    $("a").on('click', function(event) {
-  
-      // Make sure this.hash has a value before overriding default behavior
-      if (this.hash !== "") {
-        // Prevent default anchor click behavior
-        event.preventDefault();
-  
-        // Store hash
-        var hash = this.hash,
-        val = $(hash).offset().top;
-        // Using jQuery's animate() method to add smooth page scroll
-        // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
-        $('html, body').animate({
-          scrollTop: val-150
-        }, 800, function(){
-  
-          // Add hash (#) to URL when done scrolling (default click behavior)
-          window.location.hash = hash;
+        fadeEffect: {
+            crossFade: true
+          },
+          navigation: {
+            nextEl: '.swiper-button-next',
+            prevEl: '.swiper-button-prev',
+          },
+          pagination: {
+            el: '.swiper-pagination',
+            type: 'fraction',
+          },
+          autoHeight: false,
+          modules: [Navigation, Pagination],
+      });
+    
+      // swiper_main.slideTo(1, false,false);
+      swiper_main.on('slideChange', function (i) {
+        var cupage = swiper_main.activeIndex +1;
+        console.log(cupage)
+        $('nav ul li').removeClass('active');
+        $('nav ul li[data-mno="'+cupage+'"]').addClass('active');
+    
+      });
+    
+      $("a").on('click', function(event) {
+    
+        // Make sure this.hash has a value before overriding default behavior
+        if (this.hash !== "") {
+          // Prevent default anchor click behavior
+          event.preventDefault();
+    
+          // Store hash
+          var hash = this.hash,
+          val = $(hash).offset().top;
+          // Using jQuery's animate() method to add smooth page scroll
+          // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+          $('html, body').animate({
+            scrollTop: val-150
+          }, 800, function(){
+    
+            // Add hash (#) to URL when done scrolling (default click behavior)
+            window.location.hash = hash;
+          });
+        } // End if
+      });
+    
+      //상단 로고 클릭 시에
+      $('.logo-title').click(function(){
+        window.href='/';
+        return false;
+      });
+    
+      changeDescription('UX_RESEARCH');
+}
+
+function scrollEffect () {
+    $('.scrollable').click(function(){
+        var num_scroll = $(this).data('scroll');
+        var position_top = $('#scroll_'+num_scroll).offset().top - 50;
+        
+        $('html').animate({scrollTop: position_top}, 300, function(){
+            console.log("animate Scroll!");
         });
-      } // End if
-    });
-  
-    //상단 로고 클릭 시에
-    $('.logo-title').click(function(){
-      location.reload();
-      return false;
-    });
-  
-    changeDescription('UX_RESEARCH');
-  })
-  
-$('.scrollable').click(function(){
-var num_scroll = $(this).data('scroll');
-var position_top = $('#scroll_'+num_scroll).offset().top - 50;
+    })
+}
 
-$('html').animate({scrollTop: position_top}, 300, function(){
-    console.log("animate Scroll!");
-});
-})
-  
-$('.content__b .case').click(function(){
-$('.case.active').removeClass('active');
-$(this).addClass('active');
-var data_case = $(this).data('case');
-
-changeDescription(data_case);
-})
+function contentEffect () {
+    $('.content__b .case').click(function(){
+        $('.case.active').removeClass('active');
+        $(this).addClass('active');
+        var data_case = $(this).data('case');
+        changeDescription(data_case);
+    })
+}
   
 function changeDescription(field_case){
-var target_convert = {
-    'SUBJECT': $('#content_subject .description'),
-    'FORM': $('#content_form .description'),
-    'AMOUNT': $('#content_amount .description'),
-    'STANDARD': $('#content_standard .description'),
-    'DETAIL': $('#content_detailguide .description'),
-}
-var object = data_description[field_case];
-// console.log(object);
-$.each(object, function(index){
-    // console.log(index);
-    // console.log(object[index]);
-    target_convert[index].children().remove();
-    $.each(object[index], function(a,b){
-    if(index == "STANDARD"){
-        target_convert[index].append('<div class="text_wrapper"><p><span>'+b.NUM+'</span><span>'+b.TEXT+'</span></p><p class="sub_text">'+b.SUB+'</p></div>')
-    } else {
-        target_convert[index].append('<p><span>'+b.NUM+'</span><span>'+b.TEXT+'</span></p>')
+    var target_convert = {
+        'SUBJECT': $('#content_subject .description'),
+        'FORM': $('#content_form .description'),
+        'AMOUNT': $('#content_amount .description'),
+        'STANDARD': $('#content_standard .description'),
+        'DETAIL': $('#content_detailguide .description'),
     }
-    }) 
-})
+    var object = data_description[field_case];
+    // console.log(object);
+    $.each(object, function(index){
+        // console.log(index);
+        // console.log(object[index]);
+        target_convert[index].children().remove();
+        $.each(object[index], function(a,b){
+        if(index == "STANDARD"){
+            target_convert[index].append('<div class="text_wrapper"><p><span>'+b.NUM+'</span><span>'+b.TEXT+'</span></p><p class="sub_text">'+b.SUB+'</p></div>')
+        } else {
+            target_convert[index].append('<p><span>'+b.NUM+'</span><span>'+b.TEXT+'</span></p>')
+        }
+        }) 
+    })
 }
   
 var data_description = {
@@ -194,3 +199,5 @@ var data_description = {
     },
 }
 }
+
+export {swiperEffect, scrollEffect, contentEffect, changeDescription};

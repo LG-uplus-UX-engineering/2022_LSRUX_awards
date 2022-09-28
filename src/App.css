@@ -115,7 +115,7 @@ section.banner {
     width: 42px;
     height: 42px;
     display: block;
-    background: url(img/icn-arw-right.png) 50% 50% / 100% auto no-repeat;
+    background: url(/public/img/icn-arw-right.png) 50% 50% / 100% auto no-repeat;
 }
 
 .swiper-button-prev {
@@ -427,7 +427,7 @@ section.content__d .process>.step>.date {
     height: 6vw;
     /* width: 9.6vw; */
     width: 100%;
-    background-image: url(./img/img_word_l.png);
+    background-image: url(/public/img/img_word_l.png);
     background-size: 100% 100%;
     display: flex;
     align-items: center;
@@ -435,7 +435,7 @@ section.content__d .process>.step>.date {
 }
 
 section.content__d .process>.step>.date.date_final {
-    background-image: url(./img/img_word_end.png);
+    background-image: url(/public/img/img_word_end.png);
 }
 
 section.content__d .process>.step>.date>span {
@@ -492,7 +492,7 @@ section.banner.banner_mobile {
     cursor: pointer;
     position: absolute;
     z-index: 100;
-    background: url(img/btn-interview-nor.png) 50% 50% / 100% auto no-repeat;
+    background: url(/public/img/btn-interview-nor.png) 50% 50% / 100% auto no-repeat;
     bottom: 5vw;
 }
 
@@ -526,7 +526,7 @@ section.content__e div.content_wrapper:nth-of-type(1)>.title::before {
     position:absolute;
     width: 74px;
     height: 50px;
-    background-image: url('./img/img_word_ballon_qna_new.png');
+    background-image: url('/public/img/img_word_ballon_qna_new.png');
     background-size: 100% 100%;
     right: 0;
     transform: translate(50%, -100%);
