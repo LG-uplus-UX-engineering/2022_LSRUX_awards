@@ -1,0 +1,91 @@
+@font-face {
+    font-family: 'Noto Sans CJK KR Medium';
+    font-style: normal;
+    src: url('/src/fonts/NotoSansCJKkr-Medium.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Regular';
+    font-style: normal;
+    src: url('/src/fonts/NotoSansCJKkr-Regular.otf') format('otf');
+}
+
+@font-face {
+    font-family: 'Noto Sans CJK KR Bold';
+    font-style: normal;
+    src: url('/src/fonts/NotoSansCJKkr-Bold.otf') format('otf');
+}
+
+*{
+    font-display: swap;
+}
+*:not(input){
+    -webkit-touch-callout:none;
+    -webkit-user-select:none;
+    -khtml-user-select:none;
+    -moz-user-select:none;
+    -ms-user-select:none;
+    user-select:none;
+    -webkit-tap-highlight-color:transparent;
+}
+*:focus {
+    outline: none;
+}
+a {
+    text-decoration: none;
+    color: unset
+}
+body{
+    margin:0;
+    font-size:1rem;
+    font-weight: normal;
+    line-height:1.5;
+    color: black;
+    text-align:left;
+    background-color: #faf7f8;
+    overflow-x:hidden;
+    scroll-behavior: smooth;
+    height: 100vh;
+}
+
+body.type2{
+    margin-top: 46.8px;
+    margin-bottom: 52px;
+}
+
+*::-webkit-scrollbar{
+    display:none;
+    width: 0;
+}
+
+p,ul,table{
+    margin:0;
+    padding:0;
+}
+li,ul{
+    list-style:none;
+    padding: 0;
+    margin: 0;
+}
+input::placeholder {
+    color: #cfcfcf;
+}
+input:focus::-webkit-input-placeholder{
+    color: transparent;
+}
+table{
+    border-spacing: 0;
+}
+
+.noto_sans {
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
+body {
+    font-family: 'Noto Sans CJK KR Regular';
+}
+
+:root {
+    --pink : #FF24F6;
+    --purple : #CB7BFF;
+}
