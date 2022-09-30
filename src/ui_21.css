@@ -9,7 +9,7 @@ input[type="search"],
 input[type="tel"]{caret-color: #ef0775;-webkit-user-select:auto;user-select:auto;}
 
 body {
-    background-color: #121212;
+    background-color: #0C0C14;
     color: #f7f7f7;
 }
 
@@ -78,6 +78,8 @@ section.banner {
     height: 42px;
     display: block;
     background: url(/public/img/icn-arw-right.png) 50% 50% / 100% auto no-repeat;
+    top: initial;
+    bottom: 16%;
 }
 
 .swiper-button-prev {
@@ -90,7 +92,7 @@ section.banner {
 }
 
 .swiper-pagination-fraction {
-    bottom: 0px;
+    bottom: 16%;
     font-family: "Noto Sans CJK KR Bold";
     font-weight: bold;
     font-size: 18px;
@@ -102,14 +104,14 @@ section.banner {
 }
 
 section.content__a {
-    margin-top: 12vh;
+    margin-top: 1vh;
 }
 
-section.content__a div.content_wrapper:nth-of-type(1)>.title {color: #ff00ff;}
-section.content__a div.content_wrapper:nth-of-type(2)>.title {color: #00ffff;}
-section.content__a div.content_wrapper:nth-of-type(3)>.title {color: #fcec32;}
-section.content__c div.content_wrapper:nth-of-type(1)>.title {color: #19f19f;}
-section.content__d div.content_wrapper:nth-of-type(1)>.title {color: #9629ff;}
+section.content__a div.content_wrapper:nth-of-type(1)>.title {color: #FFD15A;}
+section.content__a div.content_wrapper:nth-of-type(2)>.title {color: #9FFF77;}
+section.content__a div.content_wrapper:nth-of-type(3)>.title {color: var(--purple);}
+section.content__c div.content_wrapper:nth-of-type(1)>.title {color: #87A1FF;}
+section.content__d div.content_wrapper:nth-of-type(1)>.title {color: #BD42FF;}
 
 .content_wrapper {
     margin-bottom: 80px;
@@ -171,8 +173,8 @@ section.content__b .case>.hello {
     justify-content: center;
     background-color: #000000;
     border-radius: 2.3vw;
-    border: 2px solid #FCEC32;
-    color: #FCEC32;
+    border: 2px solid var(--purple);
+    color: var(--purple);
     font-size: 1.5vw;
     display: none;
     
@@ -180,8 +182,8 @@ section.content__b .case>.hello {
 
 section.content__b .case:hover,
 section.content__b .case.active {
-    border: 2px solid #FCEC32;
-    background-color: #FCEC32;
+    border: 2px solid var(--purple);
+    background-color: var(--purple);
 }
 
 section.content__b .case:hover>.btn_case,
@@ -512,6 +514,7 @@ a {
 }
 
 article {
+    max-width: 1080px;
     width: 100vw;
 }
 
@@ -524,7 +527,6 @@ section.banner {
 
 .banner .img_wrapper {
     width: 100vw;
-    /* width: 100%; */
 }
 
 .banner img {

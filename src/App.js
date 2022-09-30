@@ -3,35 +3,8 @@ import './default/default.css';
 import './ui_21.css';
 import './App.css';
 import React, { Fragment } from 'react';
-import { Banner } from './Banner';
+import { Header, Banner } from './Banner';
 import {swiperEffect, scrollEffect, contentEffect, changeDescription} from './effect';
-
-function GnbBtn ({index, label}) {
-    return (
-        <li className="scrollable" data-scroll={index}>{label}</li>
-    );
-}
-
-const GnbArray = [
-    {index : '1', label : '공모 분야'},
-    {index : '2', label : '수상 특전'},
-    {index : '3', label : '진행 절차'},
-    {index : '4', label : 'QnA'}
-];
-
-function Gnb () {
-    return(
-        <section className="gnb">
-            <div className="gnb_wrapper">
-                    <img src="/img/logo.png" alt=""></img>
-                <ul>
-                    {GnbArray.map((element)=>(<GnbBtn index={element.index} label={element.label}/>))}
-                </ul>
-            </div>
-        </section>
-    );
-};
-
 
 class App extends React.Component {
   componentDidMount() {
@@ -45,7 +18,7 @@ class App extends React.Component {
     return (
       <Fragment>
           <div className="total_wrapper">
-            <Gnb />
+            <Header />
             <article className="default">
                 <Banner />
                 <section className="content content__a">
@@ -75,22 +48,18 @@ class App extends React.Component {
                 </section>
                 <section className="content content__b">
                     <div className="case case__1 active" data-case="UX_RESEARCH">
-                        {/* <img src="/img/btn-part-01@2x.png" alt=""> */}
                         <span className="btn_case noto_sans">UX리서치 및 전략</span>
                         <span className="hello noto_sans">Hello</span>
                     </div>
                     <div className="case case__2" data-case="UI_PLAN">
-                        {/* <img src="/img/btn-part-01@2x.png" alt=""> */}
                         <span className="btn_case noto_sans">UI기획 및 설계</span>
                         <span className="hello noto_sans">Hello</span>
                     </div>
                     <div className="case case__3" data-case="GUI_DESIGN">
-                        {/* <img src="/img/btn-part-01@2x.png" alt=""> */}
                         <span className="btn_case noto_sans">GUI 디자인</span>
                         <span className="hello noto_sans">Hello</span>
                     </div>
                     <div className="case case__4" data-case="UX_PROTOTYPE">
-                        {/* <img src="/img/btn-part-01@2x.png" alt=""> */}
                         <span className="btn_case noto_sans">UX 프로토타이핑</span>
                         <span className="hello noto_sans">Hello</span>
                     </div>
@@ -263,7 +232,7 @@ class App extends React.Component {
                             </p>
                         </div>
                     </div>
-                </section>
+                </section>                    
             </article>
             <article className="qna">
                 <section className="content content__e" id="scroll_4">

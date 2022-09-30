@@ -1,5 +1,31 @@
 import React, { Fragment } from 'react';
 
+function GnbBtn ({index, label}) {
+    return (
+        <li className="scrollable" data-scroll={index}>{label}</li>
+    );
+}
+
+const GnbArray = [
+    {index : '1', label : '공모 분야'},
+    {index : '2', label : '수상 특전'},
+    {index : '3', label : '진행 절차'},
+    {index : '4', label : 'QnA'}
+];
+
+function Header () {
+    return(
+        <section className="gnb">
+            <div className="gnb_wrapper">
+                    <img src="/img/logo.png" alt=""></img>
+                <ul>
+                    {GnbArray.map((element)=>(<GnbBtn index={element.index} label={element.label}/>))}
+                </ul>
+            </div>
+        </section>
+    );
+};
+
 function Slide ({type, url_img, url_interview}) {
     return (
         <div className={`img_wrapper swiper-slide ${type}`}>
@@ -11,9 +37,9 @@ function Slide ({type, url_img, url_interview}) {
 
 const SlidArray = [
     {type : 'type0', url_img : "img/img-banner-main_2022.png"},
-    {type : 'type1', url_img : "img/img-banner-01_2021.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=382"},
-    {type : 'type2', url_img : "img/img-banner-03_2021.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type3', url_img : "img/img-banner-02_2021.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type3', url_img : "img/img-banner-01_2021.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=382"},
+    {type : 'type1', url_img : "img/img-banner-03_2021.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "img/img-banner-02_2021.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
 ]
 
 function Banner () {
@@ -38,4 +64,4 @@ function Banner () {
     </Fragment>
     );
 }
-export {Banner};
+export {Header, Banner};
