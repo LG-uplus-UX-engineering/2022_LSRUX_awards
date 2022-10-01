@@ -79,7 +79,7 @@ section.banner {
     display: block;
     background: url(/public/img/icn-arw-right.png) 50% 50% / 100% auto no-repeat;
     top: initial;
-    bottom: 16%;
+    bottom: 14%;
 }
 
 .swiper-button-prev {
@@ -92,7 +92,7 @@ section.banner {
 }
 
 .swiper-pagination-fraction {
-    bottom: 16%;
+    bottom: 14%;
     font-family: "Noto Sans CJK KR Bold";
     font-weight: bold;
     font-size: 18px;
@@ -104,7 +104,7 @@ section.banner {
 }
 
 section.content__a {
-    margin-top: 1vh;
+    margin-top: 3vh;
 }
 
 section.content__a div.content_wrapper:nth-of-type(1)>.title {color: #FFD15A;}
@@ -198,6 +198,12 @@ section.content__b .case.active>.hello {
 
 section.content__b img {
     width: 100%;
+}
+
+section.content__b .case.empty {
+    display: none;
+    pointer-events: none;
+    cursor: none;
 }
 
 section.content__c {
@@ -1032,6 +1038,13 @@ section.content__c.content__c__a>.module_line {
         font-size: 3vw;
     }
 
+    section.content__b .case.empty {
+        display: block;
+        visibility: hidden;
+        pointer-events: none;
+        cursor: none;
+    }
+
     section.content__c {
         margin-top: 21px;
         padding-bottom: 50px;
@@ -1089,8 +1102,8 @@ section.content__c.content__c__a>.module_line {
 
     section.content__b .case:hover,
     section.content__b .case.active {
-        border: 1px solid #FCEC32;
-        background-color: #FCEC32;
+        border: 1px solid var(--purple);
+        background-color: var(--purple);
     }
 
     section.apply>img{

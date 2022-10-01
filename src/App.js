@@ -4,6 +4,7 @@ import './ui_21.css';
 import './App.css';
 import React, { Fragment } from 'react';
 import { Header, Banner } from './Banner';
+import { Block1, Block2 } from './Contents';
 import {swiperEffect, scrollEffect, contentEffect, changeDescription} from './effect';
 
 class App extends React.Component {
@@ -21,49 +22,8 @@ class App extends React.Component {
             <Header />
             <article className="default">
                 <Banner />
-                <section className="content content__a">
-                    <div className="content_wrapper">
-                        <div className="title noto_sans">모집기간</div>
-                        <div className="desc">
-                            <p>8월 30일(월) 부터 9월 22일(수) 23:00시까지</p>
-                        </div>
-                    </div>
-                    <div className="content_wrapper">
-                        <div className="title noto_sans">모집대상</div>
-                        <div className="desc">
-                            <p><span>-</span><span>4년제 대학 기준 2022년 2월 이전 졸업예정 또는 경력 2년 미만의 기 졸업자 (전공무관)</span></p>
-                            <p><span>-</span><span>LG유플러스 '21년 하반기 UX신입사원 채용 전형 참석 가능자</span></p>
-                            <p><span>-</span><span>2022년 1월 입사 가능자</span></p>
-                        </div>
-                    </div>
-                    <div className="content_wrapper" id="scroll_1">
-                        <div className="title noto_sans">공모분야</div>
-                        <div className="desc">
-                            <p><span>-</span><span>단체 참가는 불가하며, 개인만 참가 가능합니다.</span> </p>
-                            <p><span>-</span><span>지원자 당 한 분야, 한 작품 지원만 가능합니다.</span></p>
-                            <p><span>-</span><span>타 공모전 수상작은 출품 불가합니다.</span></p>
-                            <p><span>-</span><span>본 공모전 참여 시 '21년 하반기 신입채용 타 공고에 중복지원이 불가합니다.</span></p>
-                        </div>
-                    </div>
-                </section>
-                <section className="content content__b">
-                    <div className="case case__1 active" data-case="UX_RESEARCH">
-                        <span className="btn_case noto_sans">UX리서치 및 전략</span>
-                        <span className="hello noto_sans">Hello</span>
-                    </div>
-                    <div className="case case__2" data-case="UI_PLAN">
-                        <span className="btn_case noto_sans">UI기획 및 설계</span>
-                        <span className="hello noto_sans">Hello</span>
-                    </div>
-                    <div className="case case__3" data-case="GUI_DESIGN">
-                        <span className="btn_case noto_sans">GUI 디자인</span>
-                        <span className="hello noto_sans">Hello</span>
-                    </div>
-                    <div className="case case__4" data-case="UX_PROTOTYPE">
-                        <span className="btn_case noto_sans">UX 프로토타이핑</span>
-                        <span className="hello noto_sans">Hello</span>
-                    </div>
-                </section>
+                <Block1 />
+                <Block2 />
                 <section className="content content__c">
                     <div className="module_line" id="content_subject">
                         <div className="subtitle">주제</div>
@@ -204,11 +164,6 @@ class App extends React.Component {
                         </div>
                     </div>
                 </section>
-                {/* <section className="apply">
-                    <a className="btn btn__apply no_underline" href="http://apply.lg.com/app/job/RetrieveJobNotices.rpi?sCompanyCode=LGT" target="_blank">
-                        <span>지원하기</span>
-                    </a>
-                </section> */}
                 <section className="content content__c content__c__a">
                     <div className="module_line">
                         <div className="subtitle">*UX 공모전 작품 제출 및 수상관련 안내사항</div>
