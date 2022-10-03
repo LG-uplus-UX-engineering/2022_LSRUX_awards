@@ -174,7 +174,7 @@ var data_description = {
         0 : {NUM:'',TEXT:'시장/트렌드 분석을 기반으로 디자인 컨셉을 도출하고 GUI디자인 및 모션디자인 제안'},
         },
     },
-    'UX_PROTOTYPE' : {
+    'UX_ENGINEERING' : {
         'SUBJECT': {
         0 : {NUM:'', TEXT:'아래 3개 공모 주제 중 택1 하여 참가'},
         1 : {NUM:'1.', TEXT:'코로나 이후의 라이프 스타일 변화에 따른 신규서비스 제안'},
@@ -197,7 +197,31 @@ var data_description = {
         'DETAIL': {
         0 : {NUM:'',TEXT:'선택한 주제가 잘 보여질 수 있도록 프로토타이핑 툴을 활용하여 서비스를 실제 동작하는 구현물로 제작'},
         },
-    }
+    },
+    'PRODUCT DESIGN' : {
+      'SUBJECT': {
+      0 : {NUM:'', TEXT:'아래 3개 공모 주제 중 택1 하여 참가'},
+      1 : {NUM:'1.', TEXT:'코로나 이후의 라이프 스타일 변화에 따른 신규서비스 제안'},
+      2 : {NUM:'2.', TEXT:'미디어/OTT 시장 변화에 따른 미디어서비스 제안'},
+      3 : {NUM:'3.', TEXT:'메타버스/믹스버스 트렌드를 기반으로 한 신규서비스 제안'},
+      },
+      'FORM': {
+      0 : {NUM:'①',TEXT:'PDF문서 (필수)<span class="small_font"><span class="divider"></span>30MB 이내</span>'},
+      1 : {NUM:'②',TEXT:'프로토타이핑 결과물 링크 (필수)'},
+      },
+      'AMOUNT': {
+      0 : {NUM:'①',TEXT:'지원서 접수 (LG Careers 사이트 제출)'},
+      1 : {NUM:'②',TEXT:'표지 표함 10장 이내 (UX공모전 이메일로 제출)'},
+      },
+      'STANDARD': {
+      0 : {NUM:'1.',TEXT:'주제 분석 능력 평가 (20%)',SUB:'주어진 주제를 분석하고, 이를 구현하기에 적합한 방법으로 프로토타입이 설계되었는가?'},
+      1 : {NUM:'2.',TEXT:'UX프로토타이핑 제작 능력 평가 (50%)',SUB:'고객의 Needs가 검증될 수 있도록 적합도와 사용성이 높은 UX프로토타이핑이 구현되었는가?'},
+      2 : {NUM:'3.',TEXT:'최종 산출물의 완성도 평가 (30%)',SUB:'서비스 컨셉과 아이디어에 대해 명확히 인지하고 검증할 수 있도록 구현충실도가 높은가?'},
+      },
+      'DETAIL': {
+      0 : {NUM:'',TEXT:'선택한 주제가 잘 보여질 수 있도록 프로토타이핑 툴을 활용하여 서비스를 실제 동작하는 구현물로 제작'},
+      },
+  }
 }
 
 export {swiperEffect, scrollEffect, contentEffect, changeDescription};

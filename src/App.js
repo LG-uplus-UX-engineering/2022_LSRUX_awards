@@ -28,13 +28,11 @@ class App extends React.Component {
                     <div className="module_line" id="content_subject">
                         <div className="subtitle">주제</div>
                         <div className="description">
-                            {/* <p><span></span><span> 포스트 코로나 시대에서 새로운 고객가치를 전달할 수 있는 신규 서비스 및 UX 전략/기획 제안</span></p> */}
                         </div>
                     </div>
                     <div className="module_line" id="content_detailguide">
                         <div className="subtitle">상세가이드</div>
                         <div className="description">
-                        {/* <p><span></span><span> 포스트 코로나 시대에서 새로운 고객가치를 전달할 수 있는 신규 서비스 및 UX 전략/기획 제안</span></p> */}
                         </div>
                     </div>
                     <div className="module_line" id="content_form">
@@ -46,8 +44,6 @@ class App extends React.Component {
                     <div className="module_line" id="content_amount">
                         <div className="subtitle">제출분량</div>
                         <div className="description">
-                            {/* <p><span>① </span><span>지원서 접수 (LG Careers 사이트 제출)</span></p>
-                            <p><span>② </span><span>표지 포함 10장 이내 (UX공모전 이메일로 제출)</span></p> */}
                         </div>
                     </div>
                     <div className="module_line underline">
@@ -76,24 +72,6 @@ class App extends React.Component {
                     <div className="module_line type_b" id="content_standard">
                         <div className="subtitle">평가기준</div>
                         <div className="description">
-                            {/* <div className="text_wrapper">
-                                <p>
-                                    <span>1. </span><span>주제 분석 능력 평가 (20%)</span>
-                                </p>
-                                <p className="sub_text">서비스에 대한 배경과 타겟 사용자에 대한 이해도가 높은가?</p>
-                            </div>
-                            <div className="text_wrapper">
-                                <p>
-                                    <span>2. </span><span>사용자 UX 전략/기획 도출 능력 평가 (50%)</span>
-                                </p>
-                                <p className="sub_text">UX전략/기획 도출과정이 논리적이며, 창의적인 접근으로 고객의 Needs를 해결해 줄 수 있는가?</p>
-                            </div>
-                            <div className="text_wrapper">
-                                <p>
-                                    <span>1. </span><span>최종 산출물의 완성도 평가 (30%)</span>
-                                </p>
-                                <p className="sub_text">분석 결과에 의거하여 완성도 높고 창의적으로 최종결과물을 완성도 높게 구현했는가?</p>
-                            </div> */}
                         </div>
                     </div>
                 </section>
