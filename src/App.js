@@ -4,7 +4,7 @@ import './ui_22.css';
 import './App.css';
 import React, { Fragment } from 'react';
 import { Header, Banner } from './Banner';
-import { Block1, Block2, Block3 } from './Contents';
+import { Block1, Block2, Block3, Block4, Block5 } from './Contents';
 import {swiperEffect, scrollEffect, contentEffect, changeDescription} from './effect';
 
 class App extends React.Component {
@@ -25,30 +25,8 @@ class App extends React.Component {
                 <Block1 />
                 <Block2 />
                 <Block3 />
-                <section className="content content__c">
-                    <div className="content_wrapper" id="scroll_2">
-                        <div className="title noto_sans">수상특전</div>
-                        <div className="desc">
-                            <p><span>-</span><span>입상자에게는 '21년 하반기 UX 신입채용 서류 면제 혜택이 부여됩니다.</span></p>
-                            <p><span>-</span><span>입상자 외에도 우수작의 경우 '21년 하반기 UX 신입채용 서류 전형 면제 혜택이 부여될 수 있습니다.</span></p>
-                        </div>
-                        <div className="detail_wrapper">
-                            <div className="detail">
-                                <div>
-                                    <span className="noto_sans">Gold(4인)</span><span></span><span className="noto_sans">상금 100만원 및 상장</span>
-                                </div>
-                                <div>
-                                    <span className="noto_sans">Silver(4인)</span><span></span><span className="noto_sans">상금 50만원 및 상장</span>
-                                </div>
-                                <div>
-                                    <span className="noto_sans">Bronze(8인)</span><span></span><span className="noto_sans">상금 30만원 및 상장</span>
-                                </div>
-                            </div>
-                            <img src="/img/img-congrats_2021_new.png" alt=""></img>
-                        </div>
-                    </div>
-                </section>
-                <section className="content content__d">
+                <Block4 />
+                {/* <section className="content content__d">
                     <div className="content_wrapper" id="scroll_3">
                         <div className="title noto_sans">진행절차</div>
                         <div className="desc">
@@ -91,7 +69,8 @@ class App extends React.Component {
                             </div>
                         </div>
                     </div>
-                </section>
+                </section> */}
+                <Block5 />
                 <section className="content content__c content__c__a">
                     <div className="module_line">
                         <div className="subtitle">*UX 공모전 작품 제출 및 수상관련 안내사항</div>

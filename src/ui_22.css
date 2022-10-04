@@ -336,7 +336,7 @@ section.content__c .detail {
 
 .content__c .detail>div>span:nth-of-type(1){
     font-size: 24px;
-    color: #19f19f;
+    color: #87A1FF;
 }
 
 .content__c .detail>div>span:nth-of-type(2) {
@@ -351,7 +351,8 @@ section.content__c .detail {
     font-size: 24px;
 }
 
-.content__c img{
+.content__c img {
+    display: none;
     width: 50%;
     margin-top: 34px;
     height: 100%;
@@ -390,6 +391,10 @@ section.content__c .detail {
     margin-top: 18px;
 }
 
+section.content__c .prize_desc {
+    max-width: 635px;
+}
+
 section.content__d .process {
     position: relative;
     display: flex;
@@ -407,19 +412,15 @@ section.content__d .process::before {
     z-index: -1;
 }
 
-section.content__d .process>.step:nth-of-type(odd){
-    width: 10vw;
-}
-
 section.content__d .process>.step {
     display: flex;
     flex-direction: column;
     flex-shrink: 10;
-
+    width: 10vw;
 }
 
 section.content__d .process>.step>.date {
-    height: 6vw;
+    height: 5.4vw;
     width: 100%;
     background-image: url(/public/img/img_word_l.png);
     background-size: 100% 100%;
@@ -433,18 +434,18 @@ section.content__d .process>.step>.date.date_final {
 }
 
 section.content__d .process>.step>.date>span {
-    margin-bottom: 6px;
+    margin-bottom: 8px;
     font-size: 1.6vw;
     width: max-content;
 }
 
 section.content__d .process>.step>.text{
-    margin-top: 25px;
+    margin-top: 20px;
     text-align: center;
 }
 
 section.content__d .process>.step>.date_final + .text {
-    color: #9629ff;
+    color:var(--purple);
 }
 
 section.apply {
@@ -1180,6 +1181,7 @@ section.content__c.content__c__a>.module_line {
         margin: 0;
     }
     .content__c img {
+        display: block;
         width: 210px;
         height: 132px;
         top: -100px;
