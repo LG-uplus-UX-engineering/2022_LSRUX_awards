@@ -93,7 +93,8 @@ function changeDescription(field_case){
         // console.log(object[index]);
         target_convert[index].children().remove();
         $.each(object[index], function(a,b){
-        if(index == "STANDARD"){
+        console.log(b.TEXT == true);
+        if(index == "STANDARD" || index == "SUBJECT"){
             target_convert[index].append('<div class="text_wrapper"><p><span>'+b.NUM+'</span><span>'+b.TEXT+'</span></p><p class="sub_text">'+b.SUB+'</p></div>')
         } else {
             target_convert[index].append('<p><span>'+b.NUM+'</span><span>'+b.TEXT+'</span></p>')
@@ -105,9 +106,9 @@ function changeDescription(field_case){
 var data_description = {
     'UX_RESEARCH' : {
         'SUBJECT': {
-        0 : {NUM:'', TEXT:'아래 3개 공모 주제 중 택1 하여 참가'},
-        1 : {NUM:'1.', TEXT:'[트렌드] 고객 라이프 스타일 변화에 따른 LG유플러스 고객 경험 방향 제안'},
-        2 : {NUM:'2.', TEXT:'[접점] 통신사 고객 여정에 따른 LG유플러스 접점의 고객경험 방향 혹은 UX 방향 제안'},
+        0 : {NUM:'', TEXT:'아래 3개 공모 주제 중 택1 하여 참가', SUB:''},
+        1 : {NUM:'1.', TEXT:'[트렌드] 고객 라이프 스타일 변화에 따른 LG유플러스 고객 경험 방향 제안', SUB:'고객 경험 범위 : 사업/서비스/마케팅/커뮤니케이션 등 무관<br>고객 경험 방향 : 트렌드 및 고객 조사/분석 기반이 고객 경험 전략 방향 및 시나리오'},
+        2 : {NUM:'2.', TEXT:'[접점] 통신사 고객 여정에 따른 LG유플러스 접점의 고객경험 방향 혹은 UX 방향 제안', SUB:'접점 범위 : U+기존 접점(U+매장, U+홈페이지, U+언택스토어, 당신의 U+(고객센터)등, 신규접점<br>고객 경험 방향 : 고객 여정조사/분석 기반의 접점 경험 개선 및 신규 접점 경험 전략 방향<br>UX방향 : UX 리서치 기반의 접점 서비스 UX개선 및 신규 UX 방향성'},
         3 : {NUM:'3.', TEXT:'[서비스] LG유플러스 서비스의 UX 방향 제안'},
         },
         'FORM': {
