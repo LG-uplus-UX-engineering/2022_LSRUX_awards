@@ -65,6 +65,7 @@ function Block2 () {
 
 const ContentArray3 = [
     {type:'content_title', title:'', add: 'active'},
+    {type:'content_subject', title:'주제'},
     {type:'content_detailguide', title:'상세가이드'},
     {type:'content_form', title:'제출형식'},
     {type:'content_amount', title:'제출분량'},
@@ -72,28 +73,6 @@ const ContentArray3 = [
     {type:'content_notice', title:'유의사항'},
     {type:'content_standard', title:'평가기준', add: 'type_b underline'}
 ];
-
-const GuideCommon = (
-    <Fragment>
-        <p>
-            <span>1. </span><span>출품 파일은 지원자가 자율적으로 구성하여 작성할 수 있음</span>
-        </p>
-        <p>
-            <span>2. </span><span>평가 기준을 참고하여 화면 구성 및 설명을 기입</span>
-        </p>
-        <p>
-            <span>3. </span><span>원칙적으로 화면의 분량은 제한이 없으나 가급적 15페이지 이내로 작성할 것을 권장함</span>
-        </p>
-        <p>
-            <span>4. </span><span>지원서 접수는 LG Careers <a href="http://apply.lg.com" target="_blank"><span>http://apply.lg.com</span></a>를 통해 제출해주시고,
-            그 외 공모전 출품은 lsrux 공모전 공용계정 이메일 <span className="email_address">lsruxawards@lguplus.co.kr</span>로
-            제출해주시기 바랍니다.</span>
-        </p>
-        <p>
-            <span>5. </span><span>작품 송부 시에는 파일명에 지원자 명과 지원날짜, 공모 분야를 모두 포함 바랍니다.</span>
-        </p>
-    </Fragment>
-);
 
 function TopicContent ({add, type, title}) {
     return (
