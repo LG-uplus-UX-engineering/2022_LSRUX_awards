@@ -283,8 +283,10 @@ section.content__c>.module_line {
 }
 
 .module_line.underline {
-    border-bottom: 2px solid #575757;
-    margin-bottom: 30px;
+    /* border-bottom: 2px solid #575757;
+    margin-bottom: 30px; */
+    border-top: 2px solid #575757;
+    padding-top: 30px;
 }
 
 section.content__c .detail_wrapper {
@@ -501,7 +503,7 @@ section.content__e .not_flex {
 
 a {
     text-decoration: underline;
-    color: #00ffff;
+    color: var(--purple);
 }
 
 .no_underline {
@@ -509,7 +511,7 @@ a {
 }
 
 .email_address {
-    color: #19f19f;
+    color: #9FFF77;
 }
 
 /* banner test */
@@ -603,7 +605,7 @@ section.content__d .process>.step.no_shrink {
 }
 
 #content_form.module_line>.description>p>span:nth-of-type(2) {
-    width: 270px;
+    width: max-content;
     display: flex;
     flex-direction: row;
     align-items: center;

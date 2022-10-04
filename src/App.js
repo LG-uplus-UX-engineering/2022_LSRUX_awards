@@ -4,7 +4,7 @@ import './ui_22.css';
 import './App.css';
 import React, { Fragment } from 'react';
 import { Header, Banner } from './Banner';
-import { Block1, Block2 } from './Contents';
+import { Block1, Block2, Block3 } from './Contents';
 import {swiperEffect, scrollEffect, contentEffect, changeDescription} from './effect';
 
 class App extends React.Component {
@@ -24,61 +24,7 @@ class App extends React.Component {
                 <Banner />
                 <Block1 />
                 <Block2 />
-                <section className="content content__c">
-                    <div className="module_line" id="content_title">
-                        <div className="subtitle"></div>
-                        <div className="description">
-                        </div>
-                    </div>
-                    <div className="module_line" id="content_subject">
-                        <div className="subtitle">주제</div>
-                        <div className="description">
-                        </div>
-                    </div>
-                    <div className="module_line" id="content_detailguide">
-                        <div className="subtitle">상세가이드</div>
-                        <div className="description">
-                        </div>
-                    </div>
-                    <div className="module_line" id="content_form">
-                        <div className="subtitle">제출형식</div>
-                        <div className="description">
-                        </div>
-                    </div>
-                    <div className="module_line" id="content_amount">
-                        <div className="subtitle">제출분량</div>
-                        <div className="description">
-                        </div>
-                    </div>
-                    <div className="module_line underline">
-                        <div className="subtitle">작성가이드</div>
-                        <div className="description">
-                            <p>
-                                <span>1. </span><span>출품 파일은 지원자가 자율적으로 구성하여 작성할 수 있음</span>
-                            </p>
-                            <p>
-                                <span>2. </span><span>평가기준을 참고하여 화면 구성 및 설명을 기입</span>
-                            </p>
-                            <p>
-                                <span>3. </span><span>원칙적으로 화면의 분량은 제한이 없으나 가급적 10페이지 이내로 작성할 것을 권장함</span>
-                            </p>
-                            <p>
-                                <span>4. </span><span>지원서 접수는 LG Careers <a href="http://apply.lg.com" target="_blank"><span>http://apply.lg.com</span></a>를 통해 제출해주시고,
-                                그 외 공모전 출품은 UX공모전 공용계정 이메일 <span className="email_address">uxawards@lguplus.co.kr</span>로
-                                제출해주시기 바랍니다.</span>
-                            </p>
-                            <p>
-                                <span>5. </span><span>작품 송부 시에는 파일명에 지원자 명과 지원날짜, 공모 분야를 모두 포함 바랍니다.
-                                    ex) 210830_디자인_박00.pdf / 210830_디자인_박00_영상.mp4</span>
-                            </p>
-                        </div>
-                    </div>
-                    <div className="module_line type_b" id="content_standard">
-                        <div className="subtitle">평가기준</div>
-                        <div className="description">
-                        </div>
-                    </div>
-                </section>
+                <Block3 />
                 <section className="content content__c">
                     <div className="content_wrapper" id="scroll_2">
                         <div className="title noto_sans">수상특전</div>
