@@ -42,6 +42,12 @@ const SlidArray = [
     {type : 'type2', url_img : "img/img-banner-02_2021.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
 ]
 
+const MobileApply = (
+    <div className="mobile_message">
+        <span>공모전은 PC에서만 지원 가능합니다.</span>
+    </div>
+);
+
 function Banner () {
     return (
     <Fragment>
@@ -49,9 +55,7 @@ function Banner () {
             <div className="img_wrapper">
                 <img src="/img/img_banner_mobile.png" alt="" className="img_mobile_banner"></img>
             </div>
-            <div className="mobile_message">
-                <span>공모전은 PC에서만 지원 가능합니다.</span>
-            </div>
+            {MobileApply}
         </section>
         <section className="banner swiper-container">
             <div className="swiper-wrapper">
@@ -64,4 +68,4 @@ function Banner () {
     </Fragment>
     );
 }
-export {Header, Banner};
+export {Header, Banner, MobileApply};

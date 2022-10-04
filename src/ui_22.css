@@ -416,6 +416,9 @@ section.content__d .process>.step {
     display: flex;
     flex-direction: column;
     flex-shrink: 10;
+}
+
+section.content__d .process>.step:nth-of-type(odd) {
     width: 10vw;
 }
 
@@ -460,8 +463,8 @@ section.apply .btn__apply {
     width: 282px;
     height: 86px;
     border-radius: 10px;
-    background-color: rgba(0,255,255, 0.19);
-    border: 2px solid rgba(0,255,255, 1);
+    background-color: rgba(203,123,255, 0.19);
+    border: 2px solid var(--purple);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -470,8 +473,9 @@ section.apply .btn__apply {
 }
 
 section.apply .btn__apply:hover {
-    background-color: rgba(0,255,255, 1);
-    color: #000000;
+    border: 2px solid #6C3CBB;
+    background-color: #6C3CBB;
+    color: white;
 }
 
 section.banner.banner_mobile {
@@ -510,7 +514,7 @@ section.content__e {
 
 
 section.content__e div.content_wrapper:nth-of-type(1)>.title {
-    color: #00ffff;
+    color: #FFD15A;
     width: max-content;
     position: relative;
 }
@@ -532,7 +536,7 @@ section.content__e .not_flex {
 }
 
 .qna a {
-    color: #19F19F;
+    color: #9FFF77;
 }
 
 .wrapper_qna_case {
@@ -541,7 +545,7 @@ section.content__e .not_flex {
 }
 
 .case_qna {
-    margin-top: 70px;
+    margin-top: 64px;
 }
 
 .case_qna>.question {
@@ -680,6 +684,12 @@ section.content__d .process>.step.no_shrink {
 
 .content__c__a .module_line>.description {
     font-size: 17px;
+}
+
+.content__c__a .module_line>.awards_notice_desc {
+    font-size: 17px;
+    line-height: 29px;
+    margin-top: 5px;
 }
 
 section.content__c.content__c__a>.module_line {
@@ -1198,10 +1208,16 @@ section.content__c.content__c__a>.module_line {
     .content__c__a .module_line>.subtitle {
         width: unset;
         font-size: 13px;
+        margin-bottom: 3px;
+    }
+
+    .content__c__a .module_line>.awards_notice_desc {
+        margin-left: 10px;
     }
     
-    .content__c__a .module_line>.description {
+    .content__c__a .module_line>.description > p {
         font-size: 11px;
+        line-height: 17px;
     }
 
     section.content__d .process>.step>.text {
@@ -1222,6 +1238,12 @@ section.content__c.content__c__a>.module_line {
     .module_line>.description>p {
         font-size: 13px;
         margin-left: 0px;
+    }
+
+    #content_notice .description > p:nth-last-of-type(1) {
+        font-size: 13px;
+        line-height: 22px;
+        margin-top: 10px;
     }
 
     #content_form.module_line>.description>p>span>span{
