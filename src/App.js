@@ -1,6 +1,6 @@
 import './default/swiper.css';
 import './default/default.css';
-import './ui_21.css';
+import './ui_22.css';
 import './App.css';
 import React, { Fragment } from 'react';
 import { Header, Banner } from './Banner';
@@ -25,6 +25,11 @@ class App extends React.Component {
                 <Block1 />
                 <Block2 />
                 <section className="content content__c">
+                    <div className="module_line" id="content_title">
+                        <div className="subtitle"></div>
+                        <div className="description">
+                        </div>
+                    </div>
                     <div className="module_line" id="content_subject">
                         <div className="subtitle">주제</div>
                         <div className="description">
@@ -38,7 +43,6 @@ class App extends React.Component {
                     <div className="module_line" id="content_form">
                         <div className="subtitle">제출형식</div>
                         <div className="description">
-                            {/* <p><span>① </span><span>PDF문서 (필수) </span><span>30MB 이내</span></p> */}
                         </div>
                     </div>
                     <div className="module_line" id="content_amount">
