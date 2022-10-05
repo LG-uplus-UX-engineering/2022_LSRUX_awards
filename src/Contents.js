@@ -221,7 +221,7 @@ const ContentArray6 = [
 
 const ApplyButton = (
     <Fragment>
-        <a className="btn btn__apply no_underline" href="http://apply.lg.com/app/job/RetrieveJobNotices.rpi?sCompanyCode=LGT" target="_blank">
+        <a className="btn btn__apply no_underline" href="https://careers.lg.com" target="_blank">
             <span className="noto_sans">지원하기</span>
         </a>
         <img src="/img/img_lgu_logo.png" alt="" className="logo"></img>
@@ -238,7 +238,7 @@ function Block7 () {
                         <p className="not_flex">
                             작성 가이드 및 파일 접수와 관련한 질문을 아래에서
                             확인하시고 원하시는 답변을 찾을 수 없다면
-                            <a target="_blank" href="http://apply.lg.com/app/faq/RetrieveFaq.rpi?requestMenuId=1069"> LG Careers 사이트의 1:1 질문하기</a>
+                            <a target="_blank" href="https://careers.lg.com/culture/home/TopFaqMain.rpi"> LG Careers 사이트의 1:1 질문하기</a>
                             를 통해 질문해주시기 바랍니다.
                         </p>
                     </div>
