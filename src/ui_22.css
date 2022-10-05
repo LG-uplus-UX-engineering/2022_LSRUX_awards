@@ -662,7 +662,7 @@ section.content__d .process>.step.no_shrink>.date{
 }
 
 section.content__d .process>.step.no_shrink {
-    width: 12vw;
+    width: 11vw;
     flex-shrink: 0;
 }
 

@@ -17,7 +17,7 @@ function Header () {
     return(
         <section className="gnb">
             <div className="gnb_wrapper">
-                    <img src="/img/logo.png" alt=""></img>
+                    <img className="logo-title" src="/img/logo.png" alt=""></img>
                 <ul>
                     {GnbArray.map((element)=>(<GnbBtn index={element.index} label={element.label}/>))}
                 </ul>

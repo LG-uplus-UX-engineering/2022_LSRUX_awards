@@ -23,7 +23,7 @@ const ContentArray1 = [
     {title: '모집대상', desc:
     <Fragment>
         {<PutContent mark='-' content='4년제 대학 기준 2023년 2월 이전 졸업예정 또는 경력 2년 미만의 기 졸업자 (전공무관)'/>}
-        {<PutContent mark='-' content='LG유플러스 ‘23년 LSR/UX신입사원 채용 전형 참석 가능자'/>}
+        {<PutContent mark='-' content='LG유플러스 ‘22년 LSR/UX신입사원 채용 전형 참석 가능자'/>}
         {<PutContent mark='-' content='2023년 2월 입사 가능자'/>}
     </Fragment>},
     {title: '공모분야', scroll: 'scroll_1', desc:
@@ -120,8 +120,8 @@ function Block4 () {
             <div className="content_wrapper" id="scroll_2">
                 <div className="title noto_sans">수상특전</div>
                 <div className="desc prize_desc">
-                    {<PutContent content={'입상자에게는 ‘23년 하반기 LSR/UX 신입채용 서류 면제 혜택이 부여됩니다.'}/>}
-                    {<PutContent content={'입상자 외에도 우수작인 경우 ‘23년 하반기 LSR/UX신입채용 서류 전형 면제 혜택이 부여될 수 있습니다.'}/>}
+                    {<PutContent content={'입상자에게는 ‘22년 하반기 LSR/UX 신입채용 서류 면제 혜택이 부여됩니다.'}/>}
+                    {<PutContent content={'입상자 외에도 우수작인 경우 ‘22년 하반기 LSR/UX신입채용 서류 전형 면제 혜택이 부여될 수 있습니다.'}/>}
                 </div>
                 <div className="detail_wrapper">
                     <div className="detail">
@@ -135,9 +135,9 @@ function Block4 () {
 }
 
 
-function EnrollProcess ({date, content, line, final}) {
+function EnrollProcess ({date, content, line, final, shrink}) {
     return(
-        <div className={`step ${line ? line : ''}`}>
+        <div className={`step ${line ? line : ''} ${shrink ? 'no_shrink' : ''}`}>
             {line ? null :
                 <Fragment>
                     <div className={`date noto_sans ${final ? final : ''}`}><span className="noto_sans">{date}</span></div>
@@ -154,15 +154,15 @@ const ContentArray5 = [
     {line: 'step_line'},
     {date: '11월 4주차', content:'시상식'},
     {line: 'step_line'},
-    {date: '12월 중', content:'인적성검사 & AI영상 면접'},
+    {date: '12월 중', content:['인적성검사 &',<br />, 'AI영상 면접']},
     {line: 'step_line'},
     {date: '12월 중', content:'실무 면접'},
     {line: 'step_line'},
-    {date: '1월 (4주간)', content:'인턴십'},
+    {date: '‘23년 1월 중', content:['인턴십',<br />, '4주간'], shrink:true},
     {line: 'step_line'},
-    {date: '2월 중', content:'최종 면접'},
+    {date: '‘23년 2월 중', content:'최종 면접', shrink:true},
     {line: 'step_line'},
-    {date: '2월 중', content:'입사', final:'date_final'}
+    {date: '‘23년 2월 중', content:'입사', final:'date_final', shrink:true}
 ];
 
 function Block5 () {
@@ -174,7 +174,7 @@ function Block5 () {
                     <p>하기 일정은 상황에 따라 변경될 수 있으며, 각 전형 별 상세 일정은 합격자에게 개별 통보됩니다.</p>
                 </div>
                 <div className="process">
-                    {ContentArray5.map((e)=> <EnrollProcess date={e.date} content={e.content} line={e.line} final={e.final}/>)}
+                    {ContentArray5.map((e)=> <EnrollProcess date={e.date} content={e.content} line={e.line} final={e.final} shrink={e.shrink}/>)}
                 </div>
             </div>
         </section>
@@ -238,7 +238,7 @@ function Block7 () {
                         <p className="not_flex">
                             작성 가이드 및 파일 접수와 관련한 질문을 아래에서
                             확인하시고 원하시는 답변을 찾을 수 없다면
-                            <a target="_blank" href="http://apply.lg.com/app/faq/RetrieveFaq.rpi?requestMenuId=1069">LG Careers 사이트의 1:1 질문하기</a>
+                            <a target="_blank" href="http://apply.lg.com/app/faq/RetrieveFaq.rpi?requestMenuId=1069"> LG Careers 사이트의 1:1 질문하기</a>
                             를 통해 질문해주시기 바랍니다.
                         </p>
                     </div>
