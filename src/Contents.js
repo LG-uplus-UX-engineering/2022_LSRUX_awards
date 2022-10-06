@@ -19,7 +19,7 @@ function ContentStyle ({title, scroll, desc}) {
 }
 
 const ContentArray1 = [
-    {title: '모집기간', desc: <p>10월 10일(월) 10:00시부터 11월 21일(월) 23:00시까지</p>},
+    {title: '모집기간', desc: <p>10월 10일(월) 오전 10시부터 11월 21일(월) 오후 11시까지</p>},
     {title: '모집대상', desc:
     <Fragment>
         {<PutContent mark='-' content='4년제 대학 기준 2023년 2월 이전 졸업예정 또는 경력 2년 미만의 기 졸업자 (전공무관)'/>}
@@ -31,7 +31,7 @@ const ContentArray1 = [
         {<PutContent mark='-' content='단체 참가는 불가하며, 개인만 참가 가능합니다.'/>}
         {<PutContent mark='-' content='지원자 당 한 분야, 한 작품 지원만 가능합니다.'/>}
         {<PutContent mark='-' content='타 공모전 수상작은 출품 불가합니다.'/>}
-        {<PutContent mark='-' content='본 공모전 참여 시 ‘23년 상반기 신입채용 타 공고에 중복지원이 불가합니다.'/>}
+        {<PutContent mark='-' content='본 공모전 참여 시 동기간 내 유플러스 신입채용 타 공고에 중복지원이 불가합니다.'/>}
     </Fragment>
     }
 ];
@@ -154,11 +154,11 @@ const ContentArray5 = [
     {line: 'step_line'},
     {date: '11월 4주차', content:'시상식'},
     {line: 'step_line'},
-    {date: '12월 중', content:['인적성검사 &',<br />, 'AI영상 면접']},
+    {date: '12월 중', content:['인적성검사 & AI영상 면접']},
     {line: 'step_line'},
     {date: '12월 중', content:'실무 면접'},
     {line: 'step_line'},
-    {date: '‘23년 1월 중', content:['인턴십',<br />, '4주간'], shrink:true},
+    {date: '‘23년 1월 중', content:['인턴십 (4주간)'], shrink:true},
     {line: 'step_line'},
     {date: '‘23년 2월 중', content:'최종 면접', shrink:true},
     {line: 'step_line'},
@@ -215,7 +215,7 @@ const ContentArray6 = [
     {num: 'Q4. ', title: '과거에 불합격한 사람이 다시 지원해도 되나요? ', answer:['과거 지원 이력에 따른 별도의 제한은 없어, 지원 가능합니다.']},
     {num: 'Q5. ', title: '지원 시 성별 및 연령제한이 있나요?', answer:['LG유플러스는 지원시 성별 및 연령 제한을 두지 않고 있습니다.']},
     {num: 'Q6. ', title: '작품제출을 이미 했는데 수정 가능한가요?', answer:['수정이 필요할 경우, 기간 내 추가적으로 작품을 메일로 송부 가능합니다.',<br />,'단, 수정 횟수는 1회로 제한하며, 2회 초과 지원 시 2회차 송부된 메일 기준으로 작품이 심사됩니다.']},
-    {num: 'Q7. ', title: '각 직무 별 어떤 업무를 하는 지 구체적으로 알고 싶어요.', answer:['LG Careers의 `MEET LG` 페이지에는 LG의 주요 직무 소개, 조직 분위기, 선배 사원 이야기, 조직 문화 등과 관련된 자료들이 모아져 있습니다. `MEET LG`를 통해 내가 가고 싶은 회사를 미리 경험해보세요.', <br />, '홈 화면의 배너를 통해서 해당 페이지로 바로 이동이 가능합니다.']},
+    {num: 'Q7. ', title: '각 직무 별 어떤 업무를 하는 지 구체적으로 알고 싶어요.', answer:['LG Careers의 People 페이지에는 LG의 주요 직무 소개, 조직 분위기, 선배 사원 이야기, 조직 문화 등과 관련된 자료들이 모아져 있습니다.', <br />, 'LG People를 통해 내가 가고 싶은 회사를 미리 경험해보세요. 홈 화면의 배너를 통해서 해당 페이지로 바로 이동이 가능합니다.']},
     {num: 'Q8. ', title: '유플러스가 현재 진행하는 산업군을 고려하여 과제를 수행해야 하나요?', answer:['다양한 산업군을 고려하여 자유롭게 과제 진행해주시면 됩니다.']},
 ];
 
