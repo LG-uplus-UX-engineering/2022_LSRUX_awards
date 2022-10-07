@@ -571,9 +571,13 @@ section.content__e .not_flex {
 }
 
 .case_qna>.answer {
+    max-width: 660px;
     margin-left: 43px;
     margin-top: 16px;
     opacity: 0.7;
+    font-size: 15px;
+    line-height: 24px;
+    word-break: keep-all;
 }
 
 a {
@@ -700,7 +704,7 @@ section.content__d .process>.step.no_shrink {
 }
 
 section.content__c.content__c__a {
-    padding-bottom: 150px;
+    padding-bottom: 155px;
     opacity: 0.7;
     margin-top: 10px;
 }
@@ -717,6 +721,7 @@ section.content__c.content__c__a {
 
 section.content__c.content__c__a>.module_line {
     flex-direction: column;
+    padding-bottom: 0px;
 }
 
 #content_form.module_line>.description>p>span span.divider {
@@ -1102,7 +1107,7 @@ section.content__c.content__c__a>.module_line {
 
     section.content__d .process {
         flex-direction: column;
-        width: 310px;
+        width: max-content;
         margin: 0 auto;
         margin-top: 40px;
     }
@@ -1120,7 +1125,7 @@ section.content__c.content__c__a>.module_line {
 
     section.content__d .content_wrapper .process>.step {
         flex-direction: row;
-        width: 320px;
+        width: max-content;
         align-items: center;
         font-size: 15px;
         margin-bottom: 24px;

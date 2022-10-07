@@ -1,7 +1,6 @@
 import './default/swiper.css';
 import './default/default.css';
 import './ui_22.css';
-import './App.css';
 import React, { Fragment } from 'react';
 import { Header, Banner } from './Banner';
 import { Block1, Block2, Block3, Block4, Block5, Block6, Block7 } from './Contents';
