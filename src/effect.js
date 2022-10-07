@@ -121,8 +121,8 @@ function changeDescription(field_case) {
 const Guide1 = '출품 파일은 지원자가 자율적으로 구성하여 작성할 수 있음';
 const Guide2 = '평가 기준을 참고하여 화면 구성 및 설명을 기입';
 const Guide3 = '원칙적으로 화면의 분량은 제한이 없으나 가급적 10페이지 이내로 작성할 것을 권장함';
-const Guide4 = '지원서 접수는 LG Careers <a href="https://careers.lg.com" target="_blank"><span>https://careers.lg.com</span></a>를 통해 제출해주시고, 그 외 공모전 출품은 lsrux 공모전 공용계정 이메일 <span class="email_address">lsruxawards@lguplus.co.kr</span>로 제출해주시기 바랍니다.';
-const Guide5 = '작품 송부 시에는 파일명에 지원자 명과 지원날짜, 공모 분야를 모두 포함 바랍니다.';
+const Guide4 = '지원서 접수는 LG Careers <a href="https://careers.lg.com" target="_blank"><span>https://careers.lg.com</span></a>를 통해 제출해주시고, 그 외 공모전 출품은 LSR/UX 공모전 공용계정 이메일 <span class="email_address">lsruxawards@lguplus.co.kr</span>로 제출해주시기 바랍니다.';
+const Guide5 = '작품 송부 시에는 파일명에 지원 날짜와 공모 분야, 지원자 명을 모두 포함 바랍니다.';
 
 var data_description = {
     'UX_RESEARCH' : {

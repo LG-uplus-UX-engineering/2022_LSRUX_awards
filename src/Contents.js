@@ -23,7 +23,7 @@ const ContentArray1 = [
     {title: '모집대상', desc:
     <Fragment>
         {<PutContent mark='-' content='4년제 대학 기준 2023년 2월 이전 졸업예정 또는 경력 2년 미만의 기 졸업자 (전공무관)'/>}
-        {<PutContent mark='-' content='LG유플러스 ‘22년 LSR/UX신입사원 채용 전형 참석 가능자'/>}
+        {<PutContent mark='-' content='‘22년 LSR/UX 신입사원 채용 전형 참여 가능자'/>}
         {<PutContent mark='-' content='2023년 2월 입사 가능자'/>}
     </Fragment>},
     {title: '공모분야', scroll: 'scroll_1', desc:
@@ -120,8 +120,7 @@ function Block4 () {
             <div className="content_wrapper" id="scroll_2">
                 <div className="title noto_sans">수상특전</div>
                 <div className="desc prize_desc">
-                    {<PutContent content={'입상자에게는 ‘22년 하반기 LSR/UX 신입채용 서류 면제 혜택이 부여됩니다.'}/>}
-                    {<PutContent content={'입상자 외에도 우수작인 경우 ‘22년 하반기 LSR/UX신입채용 서류 전형 면제 혜택이 부여될 수 있습니다.'}/>}
+                    {<PutContent content={'입상자에게는 ‘22년 하반기 LSR/UX 신입채용 서류 면제 혜택이 부여됩니다. 입상자 외에도 우수작인 경우 ‘22년 하반기 LSR/UX 신입채용 서류 전형 면제 혜택이 부여될 수 있습니다.'}/>}
                 </div>
                 <div className="detail_wrapper">
                     <div className="detail">
@@ -187,7 +186,7 @@ function Block6 () {
             <div className="module_line">
                 <div className="subtitle">* 공모전 작품 제출 및 수상관련 안내사항</div>
                 <div className="description awards_notice_desc">
-                    {<PutContent mark='1. ' content={['타 공모전 수상작 혹은 타인의 저작물 및 명의도용 확인의 경우 수상취소 혹은 수상내역 환수', <br /> , '※ 표절 작품은 수상에서 제외되며, 수상작으로 선정된 이후 표절사실이 밝혀질 경우 수상 취소 및 상금 및 상장 환수']}/>}
+                    {<PutContent mark='1. ' content={['타 공모전 수상작 혹은 타인의 저작물 및 명의도용 확인의 경우 수상취소 혹은 수상내역 환수', <br /> , '※ 표절 작품은 수상에서 Z제외되며, 수상작으로 선정된 이후 표절사실이 밝혀질 경우 수상 취소 및 상금 및 상장 환수']}/>}
                     {<PutContent mark='2. ' content='저작권, 초상권 등과 관련한 응모한 작품의 모든 법적인 책임은 응모자에게 있음'/>}
                     {<PutContent mark='3. ' content='수상작품의 저작권은 수상자에게 있으나, 주최측은 수상 작품 발표, 홍보, 캠페인 등의 목적으로 활용(필요시 재가공)할 수 있음'/>}
                     {<PutContent mark='4. ' content='상금에 대한 제세공과금은 수상자가 부담함'/>}
@@ -209,7 +208,7 @@ function Qna ({num, title, answer}) {
 }
 
 const ContentArray6 = [
-    {num: 'Q1. ', title: '공모전 접수는 어디로 하면 되나요?', answer:['지원서 접수는 LG Careers 사이트를 통해 제출해 주시고 작품 제출 (PDF/동영상(선택))은 UX공모전 공용계정 이메일 lsruxawards@lguplus.co.kr로 접수해주시기 바랍니다. ']},
+    {num: 'Q1. ', title: '공모전 접수는 어디로 하면 되나요?', answer:['지원서 접수는 LG Careers 사이트를 통해 제출해 주시고 작품 제출 (PDF/동영상(선택))은 LSR/UX 공모전 공용계정 이메일 lsruxawards@lguplus.co.kr로 접수해주시기 바랍니다. ']},
     {num: 'Q2. ', title: '다른 이메일 계정으로 여러 공모분야에 중복 지원이 가능한가요?', answer:['중복지원은 불가하며 한 분야에 한 작품만 지원 가능합니다.', <br />, '동일인이 여러 이메일을 이용하여 지원하는 경우 불이익이 있을 수 있습니다.']},
     {num: 'Q3. ', title: '저는 석사인데, 지원 가능한가요?', answer:['석사 전공자도 지원 가능하나, 경력 2년 미만일 경우에만 지원 가능합니다.']},
     {num: 'Q4. ', title: '과거에 불합격한 사람이 다시 지원해도 되나요? ', answer:['과거 지원 이력에 따른 별도의 제한은 없어, 지원 가능합니다.']},

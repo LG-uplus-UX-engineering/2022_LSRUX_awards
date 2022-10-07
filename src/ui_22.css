@@ -390,9 +390,9 @@ section.content__c .detail {
     margin-top: 18px;
 }
 
-section.content__c .prize_desc {
+/* section.content__c .prize_desc {
     max-width: 635px;
-}
+} */
 
 section.content__d .process {
     position: relative;
