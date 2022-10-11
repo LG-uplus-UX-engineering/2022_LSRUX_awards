@@ -30,22 +30,22 @@ function Slide ({type, url_img, url_interview}) {
     return (
         <div className={`img_wrapper swiper-slide ${type}`}>
             <img src={`${url_img}`} />
-            {url_interview ? <a className="btn-interview" href={`${url_interview}`} target="_blank"><span className='btn-interview-text'>인터뷰 보러가기</span></a> : null}
+            {/* {url_interview ? <a className="btn-interview" href={`${url_interview}`} target="_blank"><span className='btn-interview-text'>인터뷰 보러가기</span></a> : null} */}
         </div>
     );
 }
 
 const SlidArray = [
     {type : 'type0', url_img : "img/img-banner-main_2022.png"},
-    {type : 'type1', url_img : "img/interview/img_banner_01_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=382"},
-    {type : 'type2', url_img : "img/interview/img_banner_02_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_03_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_04_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type1', url_img : "img/interview/img_banner_05_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_06_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_07_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_08_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type1', url_img : "img/interview/img_banner_09_O.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"}
+    {type : 'type1', url_img : "img/interview/img_banner_01.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=382"},
+    {type : 'type2', url_img : "img/interview/img_banner_02.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "img/interview/img_banner_03.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "img/interview/img_banner_04.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type1', url_img : "img/interview/img_banner_05.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "img/interview/img_banner_06.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "img/interview/img_banner_07.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "img/interview/img_banner_08.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type1', url_img : "img/interview/img_banner_09.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"}
 ]
 
 const MobileApply = (
