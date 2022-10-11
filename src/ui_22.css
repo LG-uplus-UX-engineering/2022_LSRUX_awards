@@ -496,35 +496,68 @@ section.banner.banner_mobile {
 }
 
 .btn-interview {
-    /* width: 100px; */
-    width: 13vw;
-    /* height: 36px; */
-    height: 4vw;
+    /* width: 13vw;
+    height: 4vw; */
     display: block;
-    cursor: pointer;
     position: absolute;
+    width: max-content;
+    max-height: 24px;
+    background: none;
+    border-bottom: 2px solid white;
+    text-decoration: none;
     z-index: 100;
-    background: url(/public/img/btn-interview-nor.png) 50% 50% / 100% auto no-repeat;
-    bottom: 5vw;
+    cursor: pointer;
+    /* background: url(/public/img/btn-interview-nor.png) 50% 50% / 100% auto no-repeat; */
+    /* bottom: 5vw; */
+}
+
+.btn-interview:hover {
+    color: var(--purple);
+    border-bottom: 2px solid var(--purple);
+}
+
+.btn-interview:hover > .btn-interview-text {
+    color: var(--purple);
 }
 
 .type1 .btn-interview {
-    right: 66vw;
+    left: 24vw;
+    top: 55%;
 }
 
 .type2 .btn-interview {
-    left: 64vw;
+    right: 24vw;
+    top: 55%;
 }
 
 
-.type3 .btn-interview {
-    left: 66vw;
+@media screen and (max-width:880px) {
+    .type1 .btn-interview {
+        height: 2.8vw;
+        top: 54%;
+    }
+
+    .type2 .btn-interview {
+        height: 2.8vw;
+        top: 54%;
+    }
+}
+
+@media screen and (min-width: 1080px) {
+    .type1 .btn-interview {
+        left: 267px;
+        top: 298px;
+    }
+
+    .type2 .btn-interview {
+        right: 267px;
+        top: 298px;
+    }
 }
 
 section.content__e {
     padding-top: 50px;
 }
-
 
 section.content__e div.content_wrapper:nth-of-type(1)>.title {
     color: #FFD15A;
@@ -650,23 +683,16 @@ section.banner .img_wrapper a {
 }
 
 section.banner .img_wrapper a>span {
-    font-size: 2vw;
+    font-family: 'Noto Sans KR Medium';
+    font-size: 1.6vw;
     width: max-content;
     padding-top: 4px;
     color: #ffffff;
     text-decoration: none;
-    opacity: 0.85;
-    font-weight: bold;
 }
 
 section.banner .img_wrapper a>span:hover{
-    color: #00ffff;
-    text-decoration: underline;
-}
-
-.btn-interview {
-    width: 16vw;
-    background: none;
+    color: var(--purple);
 }
 
 section.apply>img {
@@ -875,29 +901,11 @@ section.content__c.content__c__a>.module_line {
 
 @media screen and (min-width: 1080px) {
     section.banner .img_wrapper a>span {
-        font-size: 21px;
+        font-size: 16px;
         height: 77px;
         bottom: 250px;
     }
 
-    .type1 .btn-interview {
-        right: 730px;
-    }
-
-    .type2 .btn-interview {
-        left: 690px;
-    }
-
-    .type3 .btn-interview {
-        left: 712px;
-    }
-
-    .btn-interview {
-        width: 160px;
-        height: 44px;
-        bottom: 54px;
-    }
-    
     section.banner {
         width: 100%;
         height: 50%;
