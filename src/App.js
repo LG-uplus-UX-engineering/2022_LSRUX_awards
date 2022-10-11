@@ -27,7 +27,6 @@ class App extends React.Component {
                 <Block4 />
                 <Block5 />
                 <Block6 />
-
             </article>
             <Block7 />
           </div>

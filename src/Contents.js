@@ -220,7 +220,7 @@ const ContentArray6 = [
 
 const ApplyButton = (
     <Fragment>
-        <a className="btn btn__apply no_underline" href="https://careers.lg.com" target="_blank">
+        <a className="btn btn__apply no_underline" href="https://careers.lg.com/app/job/RetrieveJobNoticesDetail.rpi?jobNoticeId=396799" target="_blank">
             <span className="noto_sans">지원하기</span>
         </a>
         <img src="/img/img_lgu_logo.png" alt="" className="logo"></img>
