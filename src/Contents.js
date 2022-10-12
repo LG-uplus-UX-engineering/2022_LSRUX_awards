@@ -24,7 +24,7 @@ const ContentArray1 = [
     <Fragment>
         {<PutContent mark='-' content='4년제 대학 기준 2023년 2월 이전 졸업예정 또는 경력 2년 미만의 기 졸업자 (전공무관)'/>}
         {<PutContent mark='-' content='‘22년 LSR/UX 신입사원 채용 전형 참여 가능자'/>}
-        {<PutContent mark='-' content='2023년 2월 입사 가능자'/>}
+        {<PutContent mark='-' content='‘23년 2월 입사 가능자'/>}
     </Fragment>},
     {title: '공모분야', scroll: 'scroll_1', desc:
     <Fragment>
@@ -186,7 +186,7 @@ function Block6 () {
             <div className="module_line">
                 <div className="subtitle">* 공모전 작품 제출 및 수상관련 안내사항</div>
                 <div className="description awards_notice_desc">
-                    {<PutContent mark='1. ' content={['타 공모전 수상작 혹은 타인의 저작물 및 명의도용 확인의 경우 수상취소 혹은 수상내역 환수', <br /> , '※ 표절 작품은 수상에서 Z제외되며, 수상작으로 선정된 이후 표절사실이 밝혀질 경우 수상 취소 및 상금 및 상장 환수']}/>}
+                    {<PutContent mark='1. ' content={['타 공모전 수상작 혹은 타인의 저작물 및 명의도용 확인의 경우 수상취소 혹은 수상내역 환수', <br /> , '※ 표절 작품은 수상에서 제외되며, 수상작으로 선정된 이후 표절사실이 밝혀질 경우 수상 취소 및 상금 및 상장 환수']}/>}
                     {<PutContent mark='2. ' content='저작권, 초상권 등과 관련한 응모한 작품의 모든 법적인 책임은 응모자에게 있음'/>}
                     {<PutContent mark='3. ' content='수상작품의 저작권은 수상자에게 있으나, 주최측은 수상 작품 발표, 홍보, 캠페인 등의 목적으로 활용(필요시 재가공)할 수 있음'/>}
                     {<PutContent mark='4. ' content='상금에 대한 제세공과금은 수상자가 부담함'/>}
