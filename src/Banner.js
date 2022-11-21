@@ -50,7 +50,8 @@ const SlidArray = [
 
 const MobileApply = (
     <div className="mobile_message">
-        <span>공모전은 PC에서만 지원 가능합니다.</span>
+        {/* <span>공모전은 PC에서만 지원 가능합니다.</span> */}
+        <span>마감된 공고입니다.</span>
     </div>
 );
 

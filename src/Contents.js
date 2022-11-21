@@ -227,6 +227,15 @@ const ApplyButton = (
     </Fragment>
 );
 
+const ApplyInvalidButton = (
+    <Fragment>
+        <div className="btn btn__apply no_underline btn_invalid_apply">
+            <span className="noto_sans">마감된 공고입니다</span>
+        </div>
+        <img src="/img/img_lgu_logo.png" alt="" className="logo"></img>
+    </Fragment>
+);
+
 function Block7 () {
     return (
         <article className="qna">
@@ -250,7 +259,8 @@ function Block7 () {
                 {MobileApply}
             </section>
             <section className="apply">
-                {ApplyButton}
+                {/* {ApplyButton} */}
+                {ApplyInvalidButton}
             </section>
         </article>
     );
