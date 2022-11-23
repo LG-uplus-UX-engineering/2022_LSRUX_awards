@@ -3,7 +3,7 @@ import './default/default.css';
 import './ui_22.css';
 import './ui_result_22.css';
 import React, { Fragment } from 'react';
-import { Header, Banner } from './Banner';
+import { Header, Banner, ResultPopup } from './Banner';
 import { Block1, Block2, Block3, Block4, Block5, Block6, Block7 } from './Contents';
 import {swiperEffect, scrollEffect, contentEffect, changeDescription} from './effect';
 
@@ -18,6 +18,7 @@ class App extends React.Component {
   render () {
     return (
       <Fragment>
+          <ResultPopup />
           <div className="total_wrapper">
             <Header />
             <article className="default">

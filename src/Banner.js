@@ -1,4 +1,5 @@
 import React, { Fragment } from 'react';
+import { Link } from "react-router-dom";
 
 function GnbBtn ({index, label}) {
     return (
@@ -75,4 +76,19 @@ function Banner () {
     </Fragment>
     );
 }
-export {Header, Banner, MobileApply};
+
+function ResultPopup () {
+    return (
+    <div class="total_wrapper_popup">
+        <div className="result_popup">
+            <img className="popup_img" src="./img/result/result_popup.svg" alt=""></img>
+            <img className="result_popup_bubble" src="./img/result/result_bubble.svg" alt=""></img> 
+            <Link to="/result">
+                <button class="btn_winner_chk">수상작 확인하기</button>            
+            </Link>
+        </div>
+    </div> 
+    );
+};
+
+export {Header, Banner, MobileApply, ResultPopup};

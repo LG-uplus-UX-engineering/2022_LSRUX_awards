@@ -7,3 +7,214 @@ section.apply .btn__apply.btn_invalid_apply {
     font-weight: 500;
     letter-spacing: -1.6px;
 }
+
+.total_wrapper_popup {
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: rgba(5,5,5,0.85);
+    z-index: 100;
+}
+
+.total_wrapper_popup>.result_popup {
+    position: relative;
+    width: 360px;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.total_wrapper_popup>.result_popup>img.popup_img {
+    width: 100%;
+    height: auto;
+}
+
+.total_wrapper_popup .result_popup_bubble {
+    width: 90px;
+    height: auto;
+    position: absolute;
+    top: 10px;
+    right: -20px;
+}
+
+.total_wrapper_popup .btn_winner_chk {
+    position: absolute;
+    width: calc(100% - 32px);
+    height: 50px;
+    left: 50%;
+    transform: translate(-50%, -30px);
+    bottom: 0px;
+    background: rgba(119, 32, 188, 0.5);
+    border-radius: 10px;
+    border: 0px solid;
+    appearance: none;
+    font-weight: 500;
+    font-size: 22px;
+    line-height: 33px;
+    text-align: center;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.total_wrapper_popup .btn_winner_chk:hover {
+    background: #7804D3;
+}
+
+.winner_page section {
+    width:unset;
+}
+
+.winner_page .text_desc{
+    padding-top: 170px;
+    font-size: 18px;
+    opacity: 0.8;
+}
+
+.winner_page section.list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 73px;
+}
+
+.winner_page section.list .wrapper_congrat {
+    position: relative;
+    height: 70px;
+}
+
+
+.winner_page .wrapper_congrat>img {
+    width: 490px;
+}
+
+.winner_page section.list .wrapper_congrat>p{
+    position: absolute;
+    top: 20px;
+    left: 37px;
+    font-size: 35px;
+
+}
+
+.winner_page .module_list {
+    margin-top: 50px;
+}
+
+.winner_page .module_list>div {
+    margin-top: 15px;
+    /* max-width: 340px; */
+    width: 910px;
+}
+
+.winner_page .module_list>img {
+    width: 295px;
+}
+
+.winner_page .module_list {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    font-size: 28px;
+    margin-top: 50px;
+    padding: 0 20px;
+}
+
+.winner_page .module_list .set_prize {
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
+}
+
+.winner_page .module_list .set_prize {
+    flex-shrink: 0;
+    opacity: 0.9;
+}
+
+.winner_page .module_list .set_prize>.winner,
+.winner_page .module_list .set_prize>.title {
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.winner_page .module_list .set_prize>.title {
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 5px;
+    min-width: 520px;
+}
+
+.winner_page .module_list .set_prize>.space {
+    display: inline-block;
+    width: 38px;
+    height: 1px;
+    background-color: #979779;
+    margin: 0 8px;
+    flex-shrink: 10;
+
+}
+
+.winner_page .module_list .set_prize>.rank {
+    display: inline-block;
+    width: 84px;
+    text-align: right;
+}
+
+.winner_page .module_list .set_prize.last>.rank,
+.winner_page .module_list .set_prize.last>.space {
+    opacity: 0;
+}
+
+.winner_page .footer>img{
+    width: 96px;
+    margin-top: 164px;
+    margin-bottom: 50px;
+}
+
+@media screen and (max-width: 650px) {
+    .total_wrapper_popup .result_popup {
+        width: 252px;
+    }
+
+    .total_wrapper_popup .result_popup_bubble {
+        width: 62px;
+        top: 8px;
+        right: -15px;
+    }
+
+    .total_wrapper_popup .btn_winner_chk {
+        height: 36px;
+        font-size: 16px;
+        line-height: 23px;
+    }
+
+    .winner_page .text_desc {
+        padding-top: 70px;
+    }
+
+    .winner_page section.list .wrapper_congrat {
+        height: 100px;
+    }
+
+    .winner_page .wrapper_congrat>img {
+        width: 250px;
+    }
+    .winner_page section.list .wrapper_congrat>p {
+        width: 250px;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .winner_page .module_list {
+        font-size: 15px;
+    }
+
+    .winner_page .module_list>img {
+        width: 200px;
+    }
+
+    .winner_page .module_list .set_prize>.rank {
+        width: 50px;
+    }
+}
