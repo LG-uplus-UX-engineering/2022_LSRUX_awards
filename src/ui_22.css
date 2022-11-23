@@ -1204,8 +1204,4 @@ section.content__c.content__c__a>.module_line {
     .winner_page .module_list>img {
         width: 200px;
     }
-
-    .winner_page .module_list .set_prize>.rank {
-        width: 50px;
-    }
 }

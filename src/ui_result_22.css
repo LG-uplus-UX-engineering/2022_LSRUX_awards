@@ -62,13 +62,17 @@ section.apply .btn__apply.btn_invalid_apply {
     background: #7804D3;
 }
 
+/*수상자 안내 페이지*/
 .winner_page section {
     width:unset;
 }
 
 .winner_page .text_desc{
-    padding-top: 170px;
+    padding-top: 150px;
+    font-weight: 500;
     font-size: 18px;
+    line-height: 31px;
+    color: #FFFFFF;
     opacity: 0.8;
 }
 
@@ -76,17 +80,16 @@ section.apply .btn__apply.btn_invalid_apply {
     display: flex;
     align-items: center;
     flex-direction: column;
-    margin-top: 73px;
+    margin-top: 60px;
 }
 
 .winner_page section.list .wrapper_congrat {
     position: relative;
-    height: 70px;
 }
 
-
 .winner_page .wrapper_congrat>img {
-    width: 490px;
+    width: 522px;
+    height: auto;
 }
 
 .winner_page section.list .wrapper_congrat>p{
@@ -94,21 +97,25 @@ section.apply .btn__apply.btn_invalid_apply {
     top: 20px;
     left: 37px;
     font-size: 35px;
-
 }
 
-.winner_page .module_list {
-    margin-top: 50px;
-}
-
-.winner_page .module_list>div {
-    margin-top: 15px;
-    /* max-width: 340px; */
+.winner_page .module_list>.wrapper_text_list {
     width: 910px;
 }
 
+.winner_page .module_list .prize_block {
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+}
+
+.winner_page .module_list.module_list_upper>.wrapper_text_list {
+    text-align: center;
+}
+
 .winner_page .module_list>img {
-    width: 295px;
+    width: 320px;
+    height: auto;
 }
 
 .winner_page .module_list {
@@ -116,19 +123,44 @@ section.apply .btn__apply.btn_invalid_apply {
     align-items: center;
     flex-direction: column;
     font-size: 28px;
-    margin-top: 50px;
     padding: 0 20px;
 }
 
-.winner_page .module_list .set_prize {
+.winner_page .wrapper_prize_list {
     display: flex;
-    align-items: center;
-    flex-wrap:wrap;
+    flex-direction: column;
+    gap: 80px;
+    margin-top: 32px;
 }
 
 .winner_page .module_list .set_prize {
+    width: 232px;
+    display: flex;
+    align-items: center;
+    flex-wrap:wrap;
     flex-shrink: 0;
-    opacity: 0.9;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 33px;
+    letter-spacing: -0.6px;
+    color: #FFFFFF;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.winner_page .module_list .set_prize_list {
+    width: 630px;
+    display: flex;
+    align-items: baseline;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.winner_page .module_list.module_list_upper .set_prize {
+    font-size: 22px;
+    max-width: 238px;
+    justify-content: center;
+    margin-bottom: 15px;
 }
 
 .winner_page .module_list .set_prize>.winner,
@@ -137,26 +169,34 @@ section.apply .btn__apply.btn_invalid_apply {
     flex-shrink: 0;
 }
 
-.winner_page .module_list .set_prize>.title {
-    font-size: 20px;
+.winner_page .module_list .title {
+    font-family: 'Noto Sans CJK KR Regular';
     font-weight: 500;
-    margin-left: 5px;
-    min-width: 520px;
+    font-size: 20px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 0.7);
+    opacity: 0.9;
+    width: 330px;
+}
+
+.winner_page .module_list.module_list_upper .title {
+    width: 410px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .winner_page .module_list .set_prize>.space {
     display: inline-block;
-    width: 38px;
+    /* width: 38px; */
+    flex: 1;
     height: 1px;
-    background-color: #979779;
+    background-color: #575757;
     margin: 0 8px;
     flex-shrink: 10;
-
 }
 
 .winner_page .module_list .set_prize>.rank {
     display: inline-block;
-    width: 84px;
     text-align: right;
 }
 
@@ -190,6 +230,11 @@ section.apply .btn__apply.btn_invalid_apply {
 
     .winner_page .text_desc {
         padding-top: 70px;
+        font-weight: 500;
+        font-size: 14px;
+        line-height: 22px;
+        color: #FFFFFF;
+        opacity: 0.7;
     }
 
     .winner_page section.list .wrapper_congrat {
@@ -197,13 +242,15 @@ section.apply .btn__apply.btn_invalid_apply {
     }
 
     .winner_page .wrapper_congrat>img {
-        width: 250px;
+        width: 340px;
     }
-    .winner_page section.list .wrapper_congrat>p {
-        width: 250px;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
+
+    .winner_page .wrapper_prize_list {
+        gap: 38px;
+    }
+
+    .winner_page .module_list.module_list_upper .set_prize {
+        margin-bottom: 0px;
     }
 
     .winner_page .module_list {
@@ -211,10 +258,31 @@ section.apply .btn__apply.btn_invalid_apply {
     }
 
     .winner_page .module_list>img {
-        width: 200px;
+        width: 184px;
     }
 
-    .winner_page .module_list .set_prize>.rank {
-        width: 50px;
+    .winner_page .module_list .set_prize>.space,.winner_page .module_list .title {
+        display: none;
+    }
+
+    .winner_page .module_list .prize_block {
+        gap: 0px;
+    }
+
+    .winner_page .module_list .set_prize {
+        width: max-content;
+        gap: 13px;
+    }
+
+    .winner_page .winner,.winner_page .rank {
+        font-size: 14px;
+    }
+
+    .winner_page .rank {
+        line-height: 21px;
+        color: #979797;
+    }
+    .winner_page .footer>img {
+        margin-top: 84px;
     }
 }
