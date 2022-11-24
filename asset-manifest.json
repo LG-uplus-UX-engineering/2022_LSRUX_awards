@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/2022_LSRUX_awards/static/css/main.1aaaa198.css",
+    "main.css": "/2022_LSRUX_awards/static/css/main.5cf74852.css",
     "main.js": "/2022_LSRUX_awards/static/js/main.c88c42db.js",
     "static/media/NotoSansKR-Bold.otf": "/2022_LSRUX_awards/static/media/NotoSansKR-Bold.c252383c4f70753be0e7.otf",
     "static/media/NotoSansKR-Medium.otf": "/2022_LSRUX_awards/static/media/NotoSansKR-Medium.56207b5e52841342a21b.otf",
@@ -10,11 +10,11 @@
     "static/media/NotoSansKR-Medium.woff": "/2022_LSRUX_awards/static/media/NotoSansKR-Medium.865a70c3c4af55e98eb5.woff",
     "static/media/img_word_ballon_qna_new.svg": "/2022_LSRUX_awards/static/media/img_word_ballon_qna_new.a12218c1e86079d59aeb.svg",
     "index.html": "/2022_LSRUX_awards/index.html",
-    "main.1aaaa198.css.map": "/2022_LSRUX_awards/static/css/main.1aaaa198.css.map",
+    "main.5cf74852.css.map": "/2022_LSRUX_awards/static/css/main.5cf74852.css.map",
     "main.c88c42db.js.map": "/2022_LSRUX_awards/static/js/main.c88c42db.js.map"
   },
   "entrypoints": [
-    "static/css/main.1aaaa198.css",
+    "static/css/main.5cf74852.css",
     "static/js/main.c88c42db.js"
   ]
 }
