@@ -1174,34 +1174,4 @@ section.content__c.content__c__a>.module_line {
     #content_form.module_line>.description>p>span>span{
         font-size: 12px;
     }
-
-    .total_wrapper_popup>img {
-        width: 310px;
-    }
-
-    .winner_page .text_desc {
-        padding-top: 70px;
-    }
-
-    .winner_page section.list .wrapper_congrat {
-        height: 100px;
-    }
-
-    .winner_page .wrapper_congrat>img {
-        width: 250px;
-    }
-    .winner_page section.list .wrapper_congrat>p {
-        width: 250px;
-        text-align: center;
-        left: 50%;
-        transform: translateX(-50%);
-    }
-
-    .winner_page .module_list {
-        font-size: 15px;
-    }
-
-    .winner_page .module_list>img {
-        width: 200px;
-    }
 }

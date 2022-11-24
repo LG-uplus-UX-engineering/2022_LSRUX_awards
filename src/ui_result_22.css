@@ -67,13 +67,17 @@ section.apply .btn__apply.btn_invalid_apply {
     width:unset;
 }
 
-.winner_page .text_desc{
-    padding-top: 150px;
+.winner_page .text_desc {
+    padding-top: 100px;
     font-weight: 500;
     font-size: 18px;
     line-height: 31px;
     color: #FFFFFF;
     opacity: 0.8;
+}
+
+.winner_page .text_desc[type="tablet_mobile"] {
+    display: none;
 }
 
 .winner_page section.list {
@@ -266,12 +270,13 @@ section.apply .btn__apply.btn_invalid_apply {
     }
 
     .winner_page .module_list .prize_block {
-        gap: 0px;
+        gap: 5px;
     }
 
     .winner_page .module_list .set_prize {
-        width: max-content;
+        width: 150px;
         gap: 13px;
+        line-height: 21px;
     }
 
     .winner_page .winner,.winner_page .rank {
@@ -279,10 +284,25 @@ section.apply .btn__apply.btn_invalid_apply {
     }
 
     .winner_page .rank {
-        line-height: 21px;
         color: #979797;
+        margin-left: auto;
     }
     .winner_page .footer>img {
         margin-top: 84px;
+    }
+}
+
+@media screen and (max-width: 830px) {
+    .winner_page .text_desc[type="desktop"] {
+        display: none;
+    }
+
+    .winner_page .text_desc[type="tablet_mobile"] {
+        display: block;
+    }
+
+    .winner_page .text_desc[type="tablet_mobile"] > p:nth-of-type(2){
+        display: block;
+        margin-top: 30px;
     }
 }

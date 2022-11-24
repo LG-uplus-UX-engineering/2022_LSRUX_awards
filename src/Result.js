@@ -4,13 +4,17 @@ import './ui_result_22.css';
 import React, { Fragment } from 'react';
 
 const header = (
-    <section class="text_desc">
-        <p>
-            LG유플러스 LSR/UX공모전에 지원해 주신 모든 분들께 감사의 말씀을 드리며, 아래와 같이 수상작을 발표합니다.<br></br>
-            LG유플러스 공모전 수상자에게는 LSR/UX신입채용 지원자격 및 서류 면제 혜택이 부여되며,<br></br>
-            수상자 외에도 우수작인 경우 기회가 부여될 수 있으며 대상자에게는 개별적으로 연락드릴 예정입니다.<br></br>
-        </p>
-    </section>
+    <Fragment>
+        <section class="text_desc" type="desktop">
+            <p>LG유플러스 LSR/UX공모전에 지원해 주신 모든 분들께 감사의 말씀을 드리며, 아래와 같이 수상작을 발표합니다.</p>
+            <p>LG유플러스 공모전 수상자에게는 LSR/UX신입채용 지원자격 및 서류 면제 혜택이 부여되며,</p>
+            <p>수상자 외에도 우수작인 경우 기회가 부여될 수 있으며 대상자에게는 개별적으로 연락드릴 예정입니다.</p>
+        </section>
+        <section class="text_desc" type="tablet_mobile">
+            <p>LG유플러스 LSR/UX공모전에 지원해 주신 모든 분들께 감사의 말씀을 드리며, 아래와 같이 수상작을 발표합니다.</p>
+            <p>LG유플러스 공모전 수상자에게는 LSR/UX신입채용 지원자격 및 서류 면제 혜택이 부여되며, 수상자 외에도 우수작인 경우 기회가 부여될 수 있으며 대상자에게는 개별적으로 연락드릴 예정입니다.</p>
+        </section>
+    </Fragment>
 );
 
 function PrizeModule_1 ({img, name, part, title}) {
