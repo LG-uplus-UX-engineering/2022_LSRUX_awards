@@ -1,3 +1,17 @@
+/*본문 스크롤 방지*/
+.total_wrapper {
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    touch-action: none;
+    pointer-events: none;
+}
+
+.winner_page > article.default {
+    margin-right: auto;
+    margin-left: auto;
+}
+
 section.apply .btn__apply.btn_invalid_apply {
     background-color: #494949;
     color: #A5A5A5;
@@ -212,7 +226,7 @@ section.apply .btn__apply.btn_invalid_apply {
 .winner_page .footer>img{
     width: 96px;
     margin-top: 164px;
-    margin-bottom: 50px;
+    margin-bottom: 100px;
 }
 
 @media screen and (max-width: 650px) {
@@ -289,6 +303,7 @@ section.apply .btn__apply.btn_invalid_apply {
     }
     .winner_page .footer>img {
         margin-top: 84px;
+        margin-bottom: 70px;
     }
 }
 

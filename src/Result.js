@@ -76,32 +76,30 @@ const footer = (
 function Result () {
     return(
         <body class="winner_page">
-            <div class="total_wrapper">
-                <article class="default">
-                    {header}
-                    <section class="list">
-                        <div class="wrapper_congrat">
-                            <img src="./img/result/img_winner_paper.svg" alt=""></img>
-                        </div>
-                        <div className='wrapper_prize_list'>
-                            {PrizeArray_1.map((e)=><PrizeModule_1 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
-                            <div class="module_list">
-                                <img src="./img/result/prize_3.png" alt="" class="list_title"></img>
-                                <div className='prize_block'>
-                                    {PrizeArray_2.map((e)=><PrizeModule_2 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
-                                </div>
+            <article class="default">
+                {header}
+                <section class="list">
+                    <div class="wrapper_congrat">
+                        <img src="./img/result/img_winner_paper.png" alt=""></img>
+                    </div>
+                    <div className='wrapper_prize_list'>
+                        {PrizeArray_1.map((e)=><PrizeModule_1 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
+                        <div class="module_list">
+                            <img src="./img/result/prize_3.png" alt="" class="list_title"></img>
+                            <div className='prize_block'>
+                                {PrizeArray_2.map((e)=><PrizeModule_2 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
                             </div>
-                            <div class="module_list">
-                                <img src="./img/result/prize_4.png" alt="" class="list_title"></img>
-                                <div className='prize_block'>
-                                    {PrizeArray_3.map((e)=><PrizeModule_2 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
-                                </div>
-                            </div>                            
                         </div>
-                    </section>
-                    {footer}
-                </article>
-            </div>
+                        <div class="module_list">
+                            <img src="./img/result/prize_4.png" alt="" class="list_title"></img>
+                            <div className='prize_block'>
+                                {PrizeArray_3.map((e)=><PrizeModule_2 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
+                            </div>
+                        </div>                            
+                    </div>
+                </section>
+                {footer}
+            </article>
         </body>
     );
 }

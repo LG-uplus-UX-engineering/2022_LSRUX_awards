@@ -18,7 +18,7 @@ function Header () {
     return(
         <section className="gnb">
             <div className="gnb_wrapper">
-                    <img className="logo-title" src="/img/logo.png" alt=""></img>
+                    <img className="logo-title" src="/2022_LSRUX_awards/img/logo.png" alt=""></img>
                 <ul>
                     {GnbArray.map((element)=>(<GnbBtn index={element.index} label={element.label}/>))}
                 </ul>
@@ -37,16 +37,16 @@ function Slide ({type, url_img, url_interview}) {
 }
 
 const SlidArray = [
-    {type : 'type0', url_img : "img/img-banner-main_2022.png"},
-    {type : 'type1', url_img : "img/interview/img_banner_01.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=382"},
-    {type : 'type2', url_img : "img/interview/img_banner_02.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_03.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_04.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type1', url_img : "img/interview/img_banner_05.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_06.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_07.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type2', url_img : "img/interview/img_banner_08.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
-    {type : 'type1', url_img : "img/interview/img_banner_09.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"}
+    {type : 'type0', url_img : "/2022_LSRUX_awards/img/img-banner-main_2022.png"},
+    {type : 'type1', url_img : "/2022_LSRUX_awards/img/interview/img_banner_01.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=382"},
+    {type : 'type2', url_img : "/2022_LSRUX_awards/img/interview/img_banner_02.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "/2022_LSRUX_awards/img/interview/img_banner_03.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "/2022_LSRUX_awards/img/interview/img_banner_04.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type1', url_img : "/2022_LSRUX_awards/img/interview/img_banner_05.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "/2022_LSRUX_awards/img/interview/img_banner_06.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "/2022_LSRUX_awards/img/interview/img_banner_07.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type2', url_img : "/2022_LSRUX_awards/img/interview/img_banner_08.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"},
+    {type : 'type1', url_img : "/2022_LSRUX_awards/img/interview/img_banner_09.png", url_interview : "http://meet.lg.com/learn/introducejob/IntroduceJobDetail.rmi?requestIntroId=383"}
 ]
 
 const MobileApply = (
@@ -61,7 +61,7 @@ function Banner () {
     <Fragment>
         <section className="banner banner_mobile">
             <div className="img_wrapper">
-                <img src="/img/img_banner_mobile.png" alt="" className="img_mobile_banner"></img>
+                <img src="/2022_LSRUX_awards/img/img_banner_mobile.png" alt="" className="img_mobile_banner"></img>
             </div>
             {MobileApply}
         </section>
@@ -81,9 +81,9 @@ function ResultPopup () {
     return (
     <div class="total_wrapper_popup">
         <div className="result_popup">
-            <img className="popup_img" src="./img/result/result_popup.svg" alt=""></img>
-            <img className="result_popup_bubble" src="./img/result/result_bubble.svg" alt=""></img> 
-            <Link to="/result">
+            <img className="popup_img" src="/2022_LSRUX_awards/img/result/result_popup.png" alt=""></img>
+            <img className="result_popup_bubble" src="/2022_LSRUX_awards/img/result/result_bubble.png" alt=""></img> 
+            <Link to="/2022_LSRUX_awards/result">
                 <button class="btn_winner_chk">수상작 확인하기</button>            
             </Link>
         </div>

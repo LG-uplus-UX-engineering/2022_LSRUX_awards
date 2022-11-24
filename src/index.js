@@ -8,8 +8,8 @@ const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
     <BrowserRouter>
         <Routes>
-            <Route path="/" element={<App />}></Route>
-            <Route path="/result" element={<Result />}></Route>
+            <Route path="/2022_LSRUX_awards" element={<App />}></Route>
+            <Route path="/2022_LSRUX_awards/result" element={<Result />}></Route>
         </Routes>
     </BrowserRouter>
 );
