@@ -81,8 +81,8 @@ function ResultPopup () {
     return (
     <div class="total_wrapper_popup">
         <div className="result_popup">
-            <img className="popup_img" src="./img/result/result_popup.svg" alt=""></img>
-            <img className="result_popup_bubble" src="./img/result/result_bubble.svg" alt=""></img> 
+            <img className="popup_img" src="./img/result/result_popup.png" alt=""></img>
+            <img className="result_popup_bubble" src="./img/result/result_bubble.png" alt=""></img> 
             <Link to="/result">
                 <button class="btn_winner_chk">수상작 확인하기</button>            
             </Link>

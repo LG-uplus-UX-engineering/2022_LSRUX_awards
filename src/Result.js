@@ -81,7 +81,7 @@ function Result () {
                     {header}
                     <section class="list">
                         <div class="wrapper_congrat">
-                            <img src="./img/result/img_winner_paper.svg" alt=""></img>
+                            <img src="./img/result/img_winner_paper.png" alt=""></img>
                         </div>
                         <div className='wrapper_prize_list'>
                             {PrizeArray_1.map((e)=><PrizeModule_1 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
