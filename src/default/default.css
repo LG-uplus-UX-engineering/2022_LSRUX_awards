@@ -19,6 +19,13 @@
     url('/src/fonts/NotoSansKR-Bold.woff') format('woff');
 }
 
+@font-face {
+    font-family: 'Apple SD Gothic Neo Medium';
+    font-style: normal;
+    src: url('/src/fonts/AppleSDGothicNeoM.ttf') format('woff'),
+    url('/src/fonts/AppleSDGothicNeoM.woff') format('woff');
+}
+
 *{
     font-display: swap;
 }

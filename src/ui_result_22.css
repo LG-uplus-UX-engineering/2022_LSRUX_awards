@@ -77,6 +77,7 @@ section.apply .btn__apply.btn_invalid_apply {
 
 .winner_page .text_desc {
     padding-top: 100px;
+    font-family: 'Noto Sans CJK KR Medium';
     font-weight: 500;
     font-size: 18px;
     line-height: 31px;
@@ -177,13 +178,16 @@ section.apply .btn__apply.btn_invalid_apply {
 
 .winner_page .module_list .set_prize>.winner,
 .winner_page .module_list .set_prize>.title {
-    font-weight: bold;
     flex-shrink: 0;
 }
 
+.winner_page .module_list .set_prize>.winner,
+.winner_page .module_list .set_prize>.part {
+    font-family: 'Noto Sans CJK KR Medium';
+}
+
 .winner_page .module_list .title {
-    font-family: 'Noto Sans CJK KR Regular';
-    font-weight: 500;
+    font-family: 'Apple SD Gothic Neo Medium';
     font-size: 20px;
     line-height: 28px;
     color: rgba(255, 255, 255, 0.7);
@@ -207,12 +211,12 @@ section.apply .btn__apply.btn_invalid_apply {
     flex-shrink: 10;
 }
 
-.winner_page .module_list .set_prize>.rank {
+.winner_page .module_list .set_prize>.part {
     display: inline-block;
     text-align: right;
 }
 
-.winner_page .module_list .set_prize.last>.rank,
+.winner_page .module_list .set_prize.last>.part,
 .winner_page .module_list .set_prize.last>.space {
     opacity: 0;
 }
@@ -287,11 +291,11 @@ section.apply .btn__apply.btn_invalid_apply {
         line-height: 21px;
     }
 
-    .winner_page .winner,.winner_page .rank {
+    .winner_page .winner,.winner_page .part {
         font-size: 14px;
     }
 
-    .winner_page .rank {
+    .winner_page .part {
         color: #979797;
         margin-left: auto;
     }

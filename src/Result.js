@@ -25,7 +25,7 @@ function PrizeModule_1 ({img, name, part, title}) {
                 <div class="set_prize">
                     <span class="winner">{name}</span>
                     <span class="space"></span>
-                    <span class="rank">{part}</span>
+                    <span class="part">{part}</span>
                 </div>
                 <p class="title">{title}</p>
             </div>
@@ -34,7 +34,7 @@ function PrizeModule_1 ({img, name, part, title}) {
 }
 
 const PrizeArray_1 = [
-    {img: "./img/result/prize_1.png", name: "김유플님", part: "UI기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름"},
+    {img: "./img/result/prize_1.png", name: "김유플님", part: "UI기획 및 설계", title: "아이돌 팬들을 위한 아티스트 중심의 누구나 손쉽게 정보를 이해할 수 있는 모바일 웹 서비스"},
     {img: "./img/result/prize_2.png", name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름"}
 ];
 
@@ -44,7 +44,7 @@ function PrizeList ({name, part, title}) {
             <div className='set_prize'>
                 <span class="winner">{name}</span>
                 <span class="space"></span>
-                <span class="rank">{part}</span>
+                <span class="part">{part}</span>
             </div>
             <p class="title">{title}</p>
         </div>
@@ -52,7 +52,7 @@ function PrizeList ({name, part, title}) {
 }
 
 const PrizeArray_2 = [
-    {name: "김유플님", part: "UX엔지니어링", title: "출품이름출품이름출품이름출품이름"},
+    {name: "김유플님", part: "UX엔지니어링", title: "오리지널 영상 시청 경험 고도화 : 손쉬운 탐색과 몰입"},
     {name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품"},
     {name: "김유플님", part: "GUI 디자인", title: "출품이름출품이름출품이름출품이름"},
     {name: "김유플님", part: "UI 기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품"},
@@ -60,7 +60,7 @@ const PrizeArray_2 = [
 ];
 
 const PrizeArray_3 = [
-    {name: "김유플님", part: "UX엔지니어링", title: "출품이름출품이름출품이름출품이름"},
+    {name: "김유플님", part: "UX엔지니어링", title: "아이돌 팬들을 위한 아티스트 중심의 누구나 손쉽게 정보를 이해할 수 있는 모바일 웹 서비스"},
     {name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품"},
     {name: "김유플님", part: "GUI 디자인", title: "출품이름출품이름출품이름출품이름"},
     {name: "김유플님", part: "UI 기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품"},
