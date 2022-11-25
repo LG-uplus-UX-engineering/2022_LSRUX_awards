@@ -322,6 +322,7 @@ function preventScroll () {
   const ScrollBody = $('.total_wrapper_popup').next();
   if(ScrollBody != null) {
     $('body').css({'overflow': 'hidden', 'height': '100%'});
+    $(window).scrollTop(0);
     ScrollBody.on('scroll touchmove mousewheel', e=> {
       e.preventDefault();
       e.stopPropagation();
