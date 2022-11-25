@@ -318,4 +318,15 @@ var data_description = {
   }
 }
 
-export {swiperEffect, scrollEffect, contentEffect, changeDescription};
+function preventScroll () {
+  const ScrollBody = $('.total_wrapper_popup').next();
+  if(ScrollBody != null) {
+    $('body').css({'overflow': 'hidden', 'height': '100%'});
+    ScrollBody.on('scroll touchmove mousewheel', e=> {
+      e.preventDefault();
+      e.stopPropagation();
+    });
+  }
+}
+
+export {swiperEffect, scrollEffect, contentEffect, changeDescription, preventScroll};

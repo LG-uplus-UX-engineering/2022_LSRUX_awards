@@ -9,9 +9,9 @@ section.apply .btn__apply.btn_invalid_apply {
 }
 
 .total_wrapper_popup+.total_wrapper {
-    width: 100vw;
+    /* width: 100vw;
     height: 100vh;
-    overflow: hidden;
+    overflow: hidden; */
     touch-action: none;
     pointer-events: none;
 }
@@ -220,7 +220,7 @@ section.apply .btn__apply.btn_invalid_apply {
 .winner_page .footer>img{
     width: 96px;
     margin-top: 164px;
-    margin-bottom: 50px;
+    margin-bottom: 70px;
 }
 
 @media screen and (max-width: 650px) {
@@ -297,7 +297,7 @@ section.apply .btn__apply.btn_invalid_apply {
     }
     .winner_page .footer>img {
         margin-top: 84px;
-        margin-bottom: 70px;
+        margin-bottom: 120px;
     }
 }
 

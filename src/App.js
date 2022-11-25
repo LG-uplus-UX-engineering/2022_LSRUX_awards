@@ -5,7 +5,7 @@ import './ui_result_22.css';
 import React, { Fragment } from 'react';
 import { Header, Banner, ResultPopup } from './Banner';
 import { Block1, Block2, Block3, Block4, Block5, Block6, Block7 } from './Contents';
-import {swiperEffect, scrollEffect, contentEffect, changeDescription} from './effect';
+import {swiperEffect, scrollEffect, contentEffect, changeDescription, preventScroll} from './effect';
 
 class App extends React.Component {
   componentDidMount() {
@@ -13,6 +13,7 @@ class App extends React.Component {
     scrollEffect();
     contentEffect();
     changeDescription();
+    preventScroll();
   }
 
   render () {

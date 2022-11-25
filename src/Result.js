@@ -33,7 +33,12 @@ function PrizeModule_1 ({img, name, part, title}) {
     );
 }
 
-function PrizeModule_2 ({name, part, title}) {
+const PrizeArray_1 = [
+    {img: "./img/result/prize_1.png", name: "김유플님", part: "UI기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름"},
+    {img: "./img/result/prize_2.png", name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름"}
+];
+
+function PrizeList ({name, part, title}) {
     return(
         <div class="set_prize_list">
             <div className='set_prize'>
@@ -45,11 +50,6 @@ function PrizeModule_2 ({name, part, title}) {
         </div>
     );
 }
-
-const PrizeArray_1 = [
-    {img: "./img/result/prize_1.png", name: "김유플님", part: "UI기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름"},
-    {img: "./img/result/prize_2.png", name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름"}
-];
 
 const PrizeArray_2 = [
     {name: "김유플님", part: "UX엔지니어링", title: "출품이름출품이름출품이름출품이름"},
@@ -66,6 +66,17 @@ const PrizeArray_3 = [
     {name: "김유플님", part: "UI 기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품"},
     {name: "김유플님", part: "고객 인사이트", title: "출품이름출품이름출품이름출품이름출품이름출품"},
 ];
+
+function PrizeModule_2 ({img, array}) {
+    return(
+    <div class="module_list">
+        <img src={img} alt="" class="list_title"></img>
+        <div className='prize_block'>
+            {array.map((e)=><PrizeList img={e.img} name={e.name} part={e.part} title={e.title}/>)}
+        </div>
+    </div>
+    );
+}
 
 const footer = (
     <section class="footer">
@@ -85,18 +96,8 @@ function Result () {
                         </div>
                         <div className='wrapper_prize_list'>
                             {PrizeArray_1.map((e)=><PrizeModule_1 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
-                            <div class="module_list">
-                                <img src="./img/result/prize_3.png" alt="" class="list_title"></img>
-                                <div className='prize_block'>
-                                    {PrizeArray_2.map((e)=><PrizeModule_2 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
-                                </div>
-                            </div>
-                            <div class="module_list">
-                                <img src="./img/result/prize_4.png" alt="" class="list_title"></img>
-                                <div className='prize_block'>
-                                    {PrizeArray_3.map((e)=><PrizeModule_2 img={e.img} name={e.name} part={e.part} title={e.title}/>)}
-                                </div>
-                            </div>                            
+                            {<PrizeModule_2 img="./img/result/prize_3.png" array={PrizeArray_2}/>}
+                            {<PrizeModule_2 img="./img/result/prize_4.png" array={PrizeArray_3}/>}
                         </div>
                     </section>
                     {footer}
