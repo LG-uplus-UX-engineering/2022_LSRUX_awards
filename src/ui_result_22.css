@@ -192,7 +192,8 @@ section.apply .btn__apply.btn_invalid_apply {
     line-height: 28px;
     color: rgba(255, 255, 255, 0.7);
     opacity: 0.9;
-    width: 330px;
+    width: 350px;
+    word-break: keep-all;
 }
 
 .winner_page .module_list.module_list_upper .title {

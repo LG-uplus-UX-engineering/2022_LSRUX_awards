@@ -34,8 +34,8 @@ function PrizeModule_1 ({img, name, part, title}) {
 }
 
 const PrizeArray_1 = [
-    {img: "./img/result/prize_1.png", name: "김유플님", part: "UI기획 및 설계", title: "아이돌 팬들을 위한 아티스트 중심의 누구나 손쉽게 정보를 이해할 수 있는 모바일 웹 서비스"},
-    {img: "./img/result/prize_2.png", name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름출품이름"}
+    {img: "./img/result/prize_1.png", name: "정지선님", part: "고객 인사이트", title: <Fragment>LG 유플러스의 구독 서비스,<br></br>유독의 새로운 UX 방향 제안</Fragment>},
+    {img: "./img/result/prize_2.png", name: "강현석님", part: "제품 디자인", title: "Wifi router : 왜 공유기엔 항상 먼지가 쌓여 있을까"}
 ];
 
 function PrizeList ({name, part, title}) {
@@ -52,19 +52,19 @@ function PrizeList ({name, part, title}) {
 }
 
 const PrizeArray_2 = [
-    {name: "김유플님", part: "UX엔지니어링", title: "오리지널 영상 시청 경험 고도화 : 손쉬운 탐색과 몰입"},
-    {name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품"},
-    {name: "김유플님", part: "GUI 디자인", title: "출품이름출품이름출품이름출품이름"},
-    {name: "김유플님", part: "UI 기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품"},
-    {name: "김유플님", part: "고객 인사이트", title: "출품이름출품이름출품이름출품이름출품이름출품"},
+    {name: "김은빈님", part: "고객 인사이트", title: "COMe, idolplus!"},
+    {name: "권순권님", part: "UI 기획 및 설계", title: "매일 넓혀가는 나의 취향, 뷰블"},
+    {name: "이아롬님", part: "GUI 디자인", title: "균형잡힌 건강한 삶을 위한 헬스케어 grit"},
+    {name: "이효중님", part: "UX 엔지니어링", title: "오리지널 영상 시청 경험 고도화 : 손쉬운 탐색과 몰입"},
+    {name: "송화영님", part: "제품 디자인", title: "Modem + Router + Set top box : Plus Object"},
 ];
 
 const PrizeArray_3 = [
-    {name: "김유플님", part: "UX엔지니어링", title: "아이돌 팬들을 위한 아티스트 중심의 누구나 손쉽게 정보를 이해할 수 있는 모바일 웹 서비스"},
-    {name: "김유플님", part: "제품 디자인", title: "출품이름출품이름출품이름출품이름출품이름출품"},
-    {name: "김유플님", part: "GUI 디자인", title: "출품이름출품이름출품이름출품이름"},
-    {name: "김유플님", part: "UI 기획 및 설계", title: "출품이름출품이름출품이름출품이름출품이름출품"},
-    {name: "김유플님", part: "고객 인사이트", title: "출품이름출품이름출품이름출품이름출품이름출품"},
+    {name: "박현경님", part: "고객 인사이트", title: "나의 일상을 알아서 챙겨주는 AI라이프 비서"},
+    {name: "이연재님", part: "UI 기획 및 설계", title: "Kither : 어린이를 위한 이머시브 메타버스 시어터 서비스"},
+    {name: "허창민님", part: "GUI 디자인", title: "언제, 어디서든 히컵 : 비대면 혼술 화상 플랫폼 서비스"},
+    {name: "강수민님", part: "UX 엔지니어링", title: "아이돌 팬들을 위한 아티스트 중심의 누구나 손쉽게 정보를 이해할 수 있는 모바일 웹 서비스"},
+    {name: "이효준님", part: "제품 디자인", title: "스마트 홈 AI 호출기 : flower"},
 ];
 
 function PrizeModule_2 ({img, array}) {
