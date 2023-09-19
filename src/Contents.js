@@ -259,8 +259,8 @@ function Block7 () {
                 {MobileApply}
             </section>
             <section className="apply">
-                {/* {ApplyButton} */}
-                {ApplyInvalidButton}
+                {ApplyButton}
+                {/* {ApplyInvalidButton} */}
             </section>
         </article>
     );
